@@ -51,7 +51,7 @@ function simpleObject() {
 function listOf(constructor, options) {
     var options = options || {},
         list = [],
-        listSize = integer({
+        listSize = options.size || integer({
             max: 20,
             min: options.min || 1
         });
