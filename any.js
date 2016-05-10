@@ -65,6 +65,7 @@ function listOf(constructor, options) {
 
 module.exports = {
     string: string,
+    word: word,
     integer: integer,
     float: float,
     boolean: boolean,
