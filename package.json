@@ -4,7 +4,7 @@
   "description": "random data generator for when test data is insignificant",
   "main": "any.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/travi/any#readme",
   "dependencies": {
     "chance": "1.0.3"
+  },
+  "devDependencies": {
+    "greenkeeper-postpublish": "1.0.0"
   }
 }
