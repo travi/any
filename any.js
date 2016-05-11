@@ -1,14 +1,6 @@
 var Chance = require('chance'),
     chance = new Chance();
 
-function float(max) {
-    if (undefined === max || 0 > max) {
-        max = 100;
-    }
-
-    return Math.random() * max;
-}
-
 function integer(options) {
     return chance.natural(options);
 }
@@ -67,7 +59,6 @@ module.exports = {
     string: string,
     word: word,
     integer: integer,
-    float: float,
     boolean: boolean,
     url: url,
     email: email,
