@@ -2,4 +2,8 @@ unit: mocha_istanbul
 
 test: unit
 
-default: test
+verify:
+  - clean
+  - test
+
+default: verify
