@@ -1,2 +1,6 @@
 unit:
   src: test/**/*-test.js
+  options:
+    coverage: true
+    reportFormats:
+      - lcovonly
