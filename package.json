@@ -33,7 +33,7 @@
     "greenkeeper-postpublish": "1.0.0",
     "grunt": "1.0.1",
     "grunt-cli": "1.2.0",
-    "grunt-mocha-istanbul": "5.0.0",
+    "grunt-mocha-istanbul": "5.0.1",
     "istanbul": "0.4.3",
     "load-grunt-config": "0.19.2",
     "mocha": "2.5.3",
