@@ -1,0 +1,5 @@
+unit: mocha_istanbul
+
+test: unit
+
+default: test

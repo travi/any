@@ -1,0 +1,10 @@
+.idea/
+node_modules/
+test/
+grunt/
+
+Gruntfile.js
+.editorconfig
+.gitattributes
+.nvmrc
+.babelrc
