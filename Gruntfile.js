@@ -5,7 +5,6 @@ module.exports = function (grunt) {
     });
 
     grunt.event.on('coverage', function(lcov, done){
-        process.env.NODE_COVERALLS_DEBUG = 1;
         require('coveralls').handleInput(lcov, function(err){
             if (err) {
                 return done(err);
