@@ -31,7 +31,7 @@ function date() {
 
 function simpleObject() {
     var object = {},
-        size = integer({max: 20});
+        size = integer({min: 1, max: 20});
 
     for (var i = 0; i < size; i += 1) {
         object[word()] = string();

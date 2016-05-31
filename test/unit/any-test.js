@@ -11,7 +11,7 @@ suite('random data generator', () => {
 
     setup(() => {
         sandbox = sinon.sandbox.create();
-        chanceStub = sandbox.stub(chance);
+        chanceStub = sandbox.stub(new Chance());
         any = proxyquire('../../any', {
             chance: sinon.stub().returns(chanceStub)
         });
@@ -22,51 +22,74 @@ suite('random data generator', () => {
     });
 
     test('that only positive integers are generated', () => {
-        var int = chance.natural();
+        const int = chance.natural();
         chanceStub.natural.withArgs(options).returns(int);
 
         assert.equal(any.integer(options), int);
     });
 
     test('that a string is generated', () => {
-        var string = chance.string();
+        const string = chance.string();
         chanceStub.string.withArgs(options).returns(string);
 
         assert.equal(any.string(options), string);
     });
 
     test('that a url is generated', () => {
-        var url = chance.url();
+        const url = chance.url();
         chanceStub.url.withArgs(options).returns(url);
 
         assert.equal(any.url(options), url);
     });
 
     test('that a url is generated', () => {
-        var word = chance.word();
+        const word = chance.word();
         chanceStub.word.returns(word);
 
         assert.equal(any.word(options), word);
     });
 
     test('that a boolean is generated', () => {
-        var boolean = chance.bool();
+        const boolean = chance.bool();
         chanceStub.bool.returns(boolean);
 
         assert.equal(any.boolean(options), boolean);
     });
 
     test('that an email is generated', () => {
-        var email = chance.email();
+        const email = chance.email();
         chanceStub.email.returns(email);
 
         assert.equal(any.email(options), email);
     });
 
     test('that a date string is generated', () => {
-        var date = chance.date();
+        const date = chance.date();
         chanceStub.date.withArgs({string: true}).returns(date);
 
         assert.equal(any.date(options), date);
+    });
+
+    test('that the object size is randomly set', () => {
+        const strings = [];
+        const words = [];
+        const objectSize = chance.natural({min: 1, max: 10});
+        chanceStub.natural.withArgs({min: 1, max: 20}).returns(objectSize);
+        for (let i = 0; i < objectSize; i += 1) {
+            const string = chance.string();
+            const word = chance.word();
+
+            strings[i] = string;
+            words[i] = word;
+
+            chanceStub.string.onCall(i).returns(string);
+            chanceStub.word.onCall(i).returns(word);
+        }
+
+        var object = any.simpleObject();
+        assert.equal(Object.keys(object).length, objectSize);
+        for (let i = 0; i < objectSize; i += 1) {
+            assert.equal(object[words[i]], strings[i]);
+        }
     });
 });
