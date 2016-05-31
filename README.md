@@ -1,5 +1,8 @@
 # Random data generator
 
+[![Build Status](https://img.shields.io/travis/travi/any.svg?style=flat)](https://travis-ci.org/travi/any)
+[![Coverage Status](http://img.shields.io/coveralls/travi/any.svg?style=flat)](https://coveralls.io/r/travi/any?branch=master)
+
 [![npm](https://img.shields.io/npm/v/@travi/any.svg?maxAge=2592000)](https://www.npmjs.com/package/@travi/any)
 
 Random data generator for when test data is insignificant. Tailoring data too closely for the domain can end
