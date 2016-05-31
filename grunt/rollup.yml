@@ -1,0 +1,5 @@
+options:
+  format: cjs
+dist:
+  files:
+    dist/any.js: any.js

@@ -1,3 +1,7 @@
+build:
+  - clean
+  - rollup
+
 unit: mocha_istanbul
 
 test: unit
