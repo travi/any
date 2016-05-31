@@ -8,6 +8,7 @@ const chance = new Chance();
 suite('random data generator', () => {
     let sandbox, any, chanceStub;
     const options = {foo: 'bar'};
+    const INTEGER_RANGE = {min: 1, max: 10};
 
     setup(() => {
         sandbox = sinon.sandbox.create();
@@ -73,7 +74,7 @@ suite('random data generator', () => {
     test('that the object size is randomly set', () => {
         const strings = [];
         const words = [];
-        const objectSize = chance.natural({min: 1, max: 10});
+        const objectSize = chance.natural(INTEGER_RANGE);
         chanceStub.natural.withArgs({min: 1, max: 20}).returns(objectSize);
         for (let i = 0; i < objectSize; i += 1) {
             const string = chance.string();
@@ -91,5 +92,40 @@ suite('random data generator', () => {
         for (let i = 0; i < objectSize; i += 1) {
             assert.equal(object[words[i]], strings[i]);
         }
+    });
+
+    suite('list', () => {
+        let listSize;
+
+        setup(() => {
+            listSize = chance.natural(INTEGER_RANGE);
+            chanceStub.natural.withArgs({min: 1, max: 20}).returns(listSize);
+        });
+
+        test('that a list of random size is returned by default', () => {
+            const constructor = sinon.spy();
+
+            const list = any.listOf(constructor);
+
+            assert.equal(list.length, listSize);
+            assert.callCount(constructor, listSize);
+        });
+
+        test('that the list size can be set through the options', () => {
+            const size = chance.natural(INTEGER_RANGE);
+
+            const list = any.listOf(sinon.spy(), {size});
+
+            assert.equal(list.length, size);
+        });
+
+        test('that the minimum range limit can be set through the options', () => {
+            const min = chance.natural(INTEGER_RANGE);
+            chanceStub.natural.withArgs({min, max: 20}).returns(listSize);
+
+            const list = any.listOf(sinon.spy(), {min});
+
+            assert.equal(list.length, listSize);
+        });
     });
 });

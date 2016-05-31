@@ -1,6 +1,11 @@
 var Chance = require('chance'),
     chance = new Chance();
 
+const DEFAULT_SIZE_RANGE = {
+    max: 20,
+    min: 1
+};
+
 function integer(options) {
     return chance.natural(options);
 }
@@ -31,7 +36,7 @@ function date() {
 
 function simpleObject() {
     var object = {},
-        size = integer({min: 1, max: 20});
+        size = integer(DEFAULT_SIZE_RANGE);
 
     for (var i = 0; i < size; i += 1) {
         object[word()] = string();
@@ -43,10 +48,7 @@ function simpleObject() {
 function listOf(constructor, options) {
     var options = options || {},
         list = [],
-        listSize = options.size || integer({
-            max: 20,
-            min: options.min || 1
-        });
+        listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
 
     for (var i = 0; i < listSize; i += 1) {
         list.push(constructor());
