@@ -1,38 +1,15 @@
-var Chance = require('chance'),
-    chance = new Chance();
+import Chance from 'chance';
+const chance = new Chance();
 
-const DEFAULT_SIZE_RANGE = {
-    max: 20,
-    min: 1
-};
+const DEFAULT_SIZE_RANGE = {max: 20, min: 1};
 
-function integer(options) {
-    return chance.natural(options);
-}
-
-function string(options) {
-    return chance.string(options);
-}
-
-function word() {
-    return chance.word();
-}
-
-function url(options) {
-    return chance.url(options);
-}
-
-function boolean() {
-    return chance.bool();
-}
-
-function email() {
-    return chance.email();
-}
-
-function date() {
-    return chance.date({string: true});
-}
+const integer = (options) => chance.natural(options);
+const string = (options) => chance.string(options);
+const word = () => chance.word();
+const url = (options) => chance.url(options);
+const boolean = () => chance.bool();
+const email = () => chance.email();
+const date = () => chance.date({string: true});
 
 function simpleObject() {
     var object = {},
@@ -45,8 +22,8 @@ function simpleObject() {
     return object;
 }
 
-function listOf(constructor, options) {
-    var options = options || {},
+function listOf(constructor, options = {}) {
+    const
         list = [],
         listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
 
@@ -57,14 +34,14 @@ function listOf(constructor, options) {
     return list;
 }
 
-module.exports = {
-    string: string,
-    word: word,
-    integer: integer,
-    boolean: boolean,
-    url: url,
-    email: email,
-    date: date,
-    simpleObject: simpleObject,
-    listOf: listOf
+export {
+    string,
+    word,
+    integer,
+    boolean,
+    url,
+    email,
+    date,
+    simpleObject,
+    listOf
 };
