@@ -2,7 +2,8 @@
   "name": "@travi/any",
   "version": "0.1.2",
   "description": "random data generator for when test data is insignificant",
-  "main": "any.js",
+  "main": "dist/any.js",
+  "jsnext:main": "dist/any.mjs",
   "scripts": {
     "test": "grunt",
     "preversion": "npm test",
@@ -30,7 +31,9 @@
   },
   "devDependencies": {
     "babel-cli": "6.9.0",
+    "babel-preset-es2015": "6.9.0",
     "babel-preset-es2015-node": "6.0.1",
+    "babel-preset-es2015-rollup": "1.1.1",
     "babel-register": "6.9.0",
     "chai": "3.5.0",
     "coveralls": "2.11.9",
@@ -47,6 +50,7 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rollup": "0.26.3",
+    "rollup-plugin-babel": "2.4.0",
     "sinon": "1.17.4",
     "time-grunt": "1.3.0"
   }
