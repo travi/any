@@ -9,5 +9,6 @@ Gruntfile.js
 .gitattributes
 .nvmrc
 .babelrc
+.travis.yml
 
 any.js
