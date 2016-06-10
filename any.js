@@ -22,13 +22,13 @@ function simpleObject() {
     return object;
 }
 
-function listOf(constructor, options = {}) {
+function listOf(factory, options = {}) {
     const
         list = [],
         listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
 
     for (var i = 0; i < listSize; i += 1) {
-        list.push(constructor());
+        list.push(factory());
     }
 
     return list;

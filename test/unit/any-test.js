@@ -103,12 +103,12 @@ suite('random data generator', () => {
         });
 
         test('that a list of random size is returned by default', () => {
-            const constructor = sinon.spy();
+            const factory = sinon.spy();
 
-            const list = any.listOf(constructor);
+            const list = any.listOf(factory);
 
             assert.equal(list.length, listSize);
-            assert.callCount(constructor, listSize);
+            assert.callCount(factory, listSize);
         });
 
         test('that the list size can be set through the options', () => {
