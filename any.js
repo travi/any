@@ -12,10 +12,11 @@ const email = () => chance.email();
 const date = () => chance.date({string: true});
 
 function simpleObject() {
-    var object = {},
+    const
+        object = {},
         size = integer(DEFAULT_SIZE_RANGE);
 
-    for (var i = 0; i < size; i += 1) {
+    for (let i = 0; i < size; i += 1) {
         object[word()] = string();
     }
 
@@ -27,7 +28,7 @@ function listOf(factory, options = {}) {
         list = [],
         listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
 
-    for (var i = 0; i < listSize; i += 1) {
+    for (let i = 0; i < listSize; i += 1) {
         list.push(factory());
     }
 

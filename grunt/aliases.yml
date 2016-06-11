@@ -2,12 +2,15 @@ build:
   - clean
   - rollup
 
+lint: eslint
+
 unit: mocha_istanbul
 
 test: unit
 
 verify:
   - clean
+  - lint
   - test
 
 default: verify

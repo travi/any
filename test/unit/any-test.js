@@ -7,8 +7,9 @@ const chance = new Chance();
 
 suite('random data generator', () => {
     let sandbox, any, chanceStub;
-    const options = {foo: 'bar'};
-    const INTEGER_RANGE = {min: 1, max: 10};
+    const
+        options = {foo: 'bar'},
+        INTEGER_RANGE = {min: 1, max: 10};
 
     setup(() => {
         sandbox = sinon.sandbox.create();
@@ -72,13 +73,15 @@ suite('random data generator', () => {
     });
 
     test('that the object size is randomly set', () => {
-        const strings = [];
-        const words = [];
-        const objectSize = chance.natural(INTEGER_RANGE);
+        const
+            strings = [],
+            words = [],
+            objectSize = chance.natural(INTEGER_RANGE);
         chanceStub.natural.withArgs({min: 1, max: 20}).returns(objectSize);
         for (let i = 0; i < objectSize; i += 1) {
-            const string = chance.string();
-            const word = chance.word();
+            const
+                string = chance.string(),
+                word = chance.word();
 
             strings[i] = string;
             words[i] = word;
@@ -87,7 +90,8 @@ suite('random data generator', () => {
             chanceStub.word.onCall(i).returns(word);
         }
 
-        var object = any.simpleObject();
+        const object = any.simpleObject();
+
         assert.equal(Object.keys(object).length, objectSize);
         for (let i = 0; i < objectSize; i += 1) {
             assert.equal(object[words[i]], strings[i]);
@@ -103,18 +107,18 @@ suite('random data generator', () => {
         });
 
         test('that a list of random size is returned by default', () => {
-            const factory = sinon.spy();
-
-            const list = any.listOf(factory);
+            const
+                factory = sinon.spy(),
+                list = any.listOf(factory);
 
             assert.equal(list.length, listSize);
             assert.callCount(factory, listSize);
         });
 
         test('that the list size can be set through the options', () => {
-            const size = chance.natural(INTEGER_RANGE);
-
-            const list = any.listOf(sinon.spy(), {size});
+            const
+                size = chance.natural(INTEGER_RANGE),
+                list = any.listOf(sinon.spy(), {size});
 
             assert.equal(list.length, size);
         });
@@ -123,9 +127,7 @@ suite('random data generator', () => {
             const min = chance.natural(INTEGER_RANGE);
             chanceStub.natural.withArgs({min, max: 20}).returns(listSize);
 
-            const list = any.listOf(sinon.spy(), {min});
-
-            assert.equal(list.length, listSize);
+            assert.equal(any.listOf(sinon.spy(), {min}).length, listSize);
         });
     });
 

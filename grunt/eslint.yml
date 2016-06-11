@@ -1,0 +1,5 @@
+target:
+  - "*.js"
+  - grunt/**/*.js
+  - src/**/*.js
+  - test/**/*.js
