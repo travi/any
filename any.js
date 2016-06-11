@@ -23,6 +23,16 @@ function simpleObject() {
     return object;
 }
 
+function objectWithKeys(keys) {
+    const object = {};
+
+    keys.forEach((key) => {
+        object[key] = string();
+    });
+
+    return object;
+}
+
 function listOf(factory, options = {}) {
     const
         list = [],
@@ -48,6 +58,7 @@ export {
     email,
     date,
     simpleObject,
+    objectWithKeys,
     listOf,
     fromList
 };

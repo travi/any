@@ -3,13 +3,24 @@ import sinon from 'sinon';
 import {assert} from 'chai';
 import Chance from 'chance';
 
-const chance = new Chance();
+const
+    chance = new Chance(),
+    INTEGER_RANGE = {min: 1, max: 10};
 
+function randomListOfStrings() {
+    const
+        list = [],
+        listSize = chance.natural(INTEGER_RANGE);
+
+    for (let i = 0; i < listSize; i += 1) {
+        list.push(chance.string());
+    }
+
+    return list;
+}
 suite('random data generator', () => {
     let sandbox, any, chanceStub;
-    const
-        options = {foo: 'bar'},
-        INTEGER_RANGE = {min: 1, max: 10};
+    const options = {foo: 'bar'};
 
     setup(() => {
         sandbox = sinon.sandbox.create();
@@ -132,21 +143,37 @@ suite('random data generator', () => {
     });
 
     suite('from list', () => {
-        let list;
-
-        setup(() => {
-            list = [];
-            const listSize = chance.natural(INTEGER_RANGE);
-            for (let i = 0; i < listSize; i += 1) {
-                list.push(chance.string());
-            }
-        });
-
         test('that an item from the provided list is returned', () => {
-            const index = chance.natural({min: 0, max: list.length});
-            chanceStub.natural.withArgs({min: 0, max: list.length}).returns(index);
+            const
+                list = randomListOfStrings(),
+                indexRange = {min: 0, max: list.length},
+                index = chance.natural(indexRange);
+            chanceStub.natural.withArgs(indexRange).returns(index);
 
             assert.equal(any.fromList(list), list[index]);
+        });
+    });
+
+    suite('object with keys', () => {
+        test('that an object is generated from the list of keys', () => {
+            const
+                keys = randomListOfStrings(),
+                strings = [];
+
+            for (let i = 0; i < keys.length; i += 1) {
+                const string = chance.string();
+
+                strings[i] = string;
+
+                chanceStub.string.onCall(i).returns(string);
+            }
+
+            const object = any.objectWithKeys(keys);
+
+            assert.deepEqual(Object.keys(object), keys);
+            keys.forEach((key, index) => {
+                assert.equal(object[key], strings[index]);
+            });
         });
     });
 });
