@@ -175,5 +175,26 @@ suite('random data generator', () => {
                 assert.equal(object[key], strings[index]);
             });
         });
+
+        test('that a factory function can be supplied for values', () => {
+            const
+                keys = randomListOfStrings(),
+                factory = sinon.stub(),
+                values = [];
+
+            for (let i = 0; i < keys.length; i += 1) {
+                const value = chance.string();
+
+                values[i] = value;
+
+                factory.onCall(i).returns(value);
+            }
+
+            const object = any.objectWithKeys(keys, {factory});
+
+            keys.forEach((key, index) => {
+                assert.equal(object[key], values[index]);
+            });
+        });
     });
 });

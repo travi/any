@@ -23,11 +23,15 @@ function simpleObject() {
     return object;
 }
 
-function objectWithKeys(keys) {
+function objectWithKeys(keys, options = {}) {
     const object = {};
 
     keys.forEach((key) => {
-        object[key] = string();
+        if (options.factory) {
+            object[key] = options.factory();
+        } else {
+            object[key] = string();
+        }
     });
 
     return object;
