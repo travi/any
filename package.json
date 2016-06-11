@@ -1,6 +1,6 @@
 {
   "name": "@travi/any",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "random data generator for when test data is insignificant",
   "main": "dist/any.js",
   "jsnext:main": "dist/any.mjs",
