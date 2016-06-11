@@ -34,6 +34,10 @@ function listOf(factory, options = {}) {
     return list;
 }
 
+function fromList(list) {
+    return list[integer({min: 0, max: list.length})];
+}
+
 export {
     string,
     word,
@@ -43,5 +47,6 @@ export {
     email,
     date,
     simpleObject,
-    listOf
+    listOf,
+    fromList
 };

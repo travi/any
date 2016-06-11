@@ -94,7 +94,7 @@ suite('random data generator', () => {
         }
     });
 
-    suite('list', () => {
+    suite('list of', () => {
         let listSize;
 
         setup(() => {
@@ -126,6 +126,25 @@ suite('random data generator', () => {
             const list = any.listOf(sinon.spy(), {min});
 
             assert.equal(list.length, listSize);
+        });
+    });
+
+    suite('from list', () => {
+        let list;
+
+        setup(() => {
+            list = [];
+            const listSize = chance.natural(INTEGER_RANGE);
+            for (let i = 0; i < listSize; i += 1) {
+                list.push(chance.string());
+            }
+        });
+
+        test('that an item from the provided list is returned', () => {
+            const index = chance.natural({min: 0, max: list.length});
+            chanceStub.natural.withArgs({min: 0, max: list.length}).returns(index);
+
+            assert.equal(any.fromList(list), list[index]);
         });
     });
 });
