@@ -41,7 +41,7 @@
     "grunt": "1.0.1",
     "grunt-cli": "1.2.0",
     "grunt-contrib-clean": "1.0.0",
-    "grunt-eslint": "18.1.0",
+    "grunt-eslint": "19.0.0",
     "grunt-mocha-istanbul": "5.0.1",
     "grunt-rollup": "0.7.1",
     "istanbul": "1.0.0-alpha.2",
