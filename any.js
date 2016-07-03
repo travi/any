@@ -3,15 +3,15 @@ const chance = new Chance();
 
 const DEFAULT_SIZE_RANGE = {max: 20, min: 1};
 
-const integer = (options) => chance.natural(options);
-const string = (options) => chance.string(options);
-const word = () => chance.word();
-const url = (options) => chance.url(options);
-const boolean = () => chance.bool();
-const email = () => chance.email();
-const date = () => chance.date({string: true});
+export const integer = (options) => chance.natural(options);
+export const string = (options) => chance.string(options);
+export const word = () => chance.word();
+export const url = (options) => chance.url(options);
+export const boolean = () => chance.bool();
+export const email = () => chance.email();
+export const date = () => chance.date({string: true});
 
-function simpleObject() {
+export function simpleObject() {
     const
         object = {},
         size = integer(DEFAULT_SIZE_RANGE);
@@ -23,7 +23,7 @@ function simpleObject() {
     return object;
 }
 
-function objectWithKeys(keys, options = {}) {
+export function objectWithKeys(keys, options = {}) {
     const object = {};
 
     keys.forEach((key) => {
@@ -37,7 +37,7 @@ function objectWithKeys(keys, options = {}) {
     return object;
 }
 
-function listOf(factory, options = {}) {
+export function listOf(factory, options = {}) {
     const
         list = [],
         listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
@@ -49,11 +49,11 @@ function listOf(factory, options = {}) {
     return list;
 }
 
-function fromList(list) {
+export function fromList(list) {
     return list[integer({min: 0, max: list.length})];
 }
 
-export {
+export default {
     string,
     word,
     integer,
