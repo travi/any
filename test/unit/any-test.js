@@ -145,67 +145,6 @@ suite('random data generator', () => {
         });
     });
 
-    suite('list of', () => {
-        let listSize;
-
-        setup(() => {
-            listSize = chance.natural(INTEGER_RANGE);
-            chanceStub.natural.withArgs({min: 1, max: 20}).returns(listSize);
-        });
-
-        test('that a list of random size is returned by default', () => {
-            const
-                factory = sinon.spy(),
-                list = any.listOf(factory);
-
-            assert.equal(list.length, listSize);
-            assert.callCount(factory, listSize);
-        });
-
-        test('that a list of random size is returned by default when accessed through the default export', () => {
-            const
-                factory = sinon.spy(),
-                list = any.default.listOf(factory);
-
-            assert.equal(list.length, listSize);
-            assert.callCount(factory, listSize);
-        });
-
-        test('that the list size can be set through the options', () => {
-            const
-                size = chance.natural(INTEGER_RANGE),
-                list = any.listOf(sinon.spy(), {size});
-
-            assert.equal(list.length, size);
-        });
-
-
-        test('that the list size can be set through the options when accessed through the default export', () => {
-            const
-                size = chance.natural(INTEGER_RANGE),
-                list = any.default.listOf(sinon.spy(), {size});
-
-            assert.equal(list.length, size);
-        });
-
-        test('that the minimum range limit can be set through the options', () => {
-            const min = chance.natural(INTEGER_RANGE);
-            chanceStub.natural.withArgs({min, max: 20}).returns(listSize);
-
-            assert.equal(any.listOf(sinon.spy(), {min}).length, listSize);
-        });
-
-        test(
-            'that the minimum range limit can be set through the options when accessed through the default export',
-            () => {
-                const min = chance.natural(INTEGER_RANGE);
-                chanceStub.natural.withArgs({min, max: 20}).returns(listSize);
-
-                assert.equal(any.default.listOf(sinon.spy(), {min}).length, listSize);
-            }
-        );
-    });
-
     suite('from list', () => {
         test('that an item from the provided list is returned', () => {
             const
