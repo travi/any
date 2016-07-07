@@ -2,22 +2,7 @@ import proxyquire from 'proxyquire';
 import sinon from 'sinon';
 import {assert} from 'chai';
 import Chance from 'chance';
-
-const
-    chance = new Chance(),
-    INTEGER_RANGE = {min: 1, max: 10};
-
-function randomListOfStrings() {
-    const
-        list = [],
-        listSize = chance.natural(INTEGER_RANGE);
-
-    for (let i = 0; i < listSize; i += 1) {
-        list.push(chance.string());
-    }
-
-    return list;
-}
+import {chance, INTEGER_RANGE, randomListOfStrings} from '../helpers/data-generator';
 
 suite('random data generator', () => {
     let sandbox, any, chanceStub;
@@ -149,21 +134,25 @@ suite('random data generator', () => {
         test('that an item from the provided list is returned', () => {
             const
                 list = randomListOfStrings(),
-                indexRange = {min: 0, max: list.length},
+                indexRange = {min: 0, max: list.length - 1},
                 index = chance.natural(indexRange);
             chanceStub.natural.withArgs(indexRange).returns(index);
 
-            assert.equal(any.fromList(list), list[index]);
+            const item = any.fromList(list);
+            assert.isDefined(item);
+            assert.equal(item, list[index]);
         });
 
         test('that an item from the provided list is returned when accessed through the default export', () => {
             const
                 list = randomListOfStrings(),
-                indexRange = {min: 0, max: list.length},
+                indexRange = {min: 0, max: list.length - 1},
                 index = chance.natural(indexRange);
             chanceStub.natural.withArgs(indexRange).returns(index);
 
-            assert.equal(any.default.fromList(list), list[index]);
+            const item = any.default.fromList(list);
+            assert.isDefined(item);
+            assert.equal(item, list[index]);
         });
     });
 

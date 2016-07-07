@@ -1,11 +1,10 @@
+import realAny from '../../any';
 import Chance from 'chance';
 import sinon from 'sinon';
 import {assert} from 'chai';
 import proxyquire from 'proxyquire';
-
-const
-    chance = new Chance(),
-    INTEGER_RANGE = {min: 1, max: 10};
+import _ from 'lodash';
+import {chance, INTEGER_RANGE, randomListOfStrings} from '../helpers/data-generator';
 
 suite('list of', () => {
     let sandbox, any, chanceStub, listSize;
@@ -76,4 +75,27 @@ suite('list of', () => {
             assert.equal(any.default.listOf(sinon.spy(), {min}).length, listSize);
         }
     );
+
+    test('that uniqueness is enforced', () => {
+        const uniqueOn = chance.word();
+        const nonUniqueValue = randomListOfStrings();
+        const min = chance.natural(INTEGER_RANGE);
+        const factory = () => {
+            return Object.assign({}, realAny.simpleObject(), {
+                [uniqueOn]: realAny.fromList([nonUniqueValue, chance.string()])
+            });
+        };
+        chanceStub.natural.returns(listSize);
+        chanceStub.natural.withArgs(sinon.match({min})).returns(min);
+
+        const listOf = any.listOf(factory, {uniqueOn});
+        const minListOf = any.default.listOf(factory, {uniqueOn, min});
+        assert.lengthOf(_.uniqBy(listOf, uniqueOn), listOf.length);
+        assert.isAtLeast(minListOf.length, min);
+
+        const defaultListOf = any.default.listOf(factory, {uniqueOn});
+        const minDefaultListOf = any.default.listOf(factory, {uniqueOn, min});
+        assert.lengthOf(_.uniqBy(defaultListOf, uniqueOn), defaultListOf.length);
+        assert.isAtLeast(minDefaultListOf.length, min);
+    });
 });

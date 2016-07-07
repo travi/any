@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import Chance from 'chance';
 const chance = new Chance();
 
@@ -38,19 +39,30 @@ export function objectWithKeys(keys, options = {}) {
 }
 
 export function listOf(factory, options = {}) {
-    const
-        list = [],
-        listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
+    const listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
 
-    for (let i = 0; i < listSize; i += 1) {
-        list.push(factory());
+    if (options.uniqueOn) {
+        const uniqueValues = {};
+
+        while (Object.keys(uniqueValues).length < listSize) {
+            const item = factory();
+            uniqueValues[item[options.uniqueOn]] = item;
+        }
+
+        return _.values(uniqueValues);
+    } else {
+        const list = [];
+
+        for (let i = 0; i < listSize; i += 1) {
+            list.push(factory());
+        }
+
+        return list;
     }
-
-    return list;
 }
 
 export function fromList(list) {
-    return list[integer({min: 0, max: list.length})];
+    return list[integer({min: 0, max: list.length - 1})];
 }
 
 export default {
