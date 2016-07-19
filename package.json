@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/travi/any#readme",
   "dependencies": {
-    "chance": "1.0.3"
+    "chance": "1.0.4"
   },
   "devDependencies": {
     "@travi/eslint-config-travi": "0.2.0",
