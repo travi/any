@@ -37,7 +37,7 @@
     "babel-register": "6.11.6",
     "chai": "3.5.0",
     "coveralls": "2.11.12",
-    "greenkeeper-postpublish": "1.0.0",
+    "greenkeeper-postpublish": "1.0.1",
     "grunt": "1.0.1",
     "grunt-cli": "1.2.0",
     "grunt-contrib-clean": "1.0.0",
