@@ -33,7 +33,7 @@
     "@travi/eslint-config-travi": "0.2.0",
     "babel-cli": "6.10.1",
     "babel-preset-es2015-node": "6.1.0",
-    "babel-preset-es2015-rollup": "1.1.1",
+    "babel-preset-es2015-rollup": "1.2.0",
     "babel-register": "6.11.6",
     "chai": "3.5.0",
     "coveralls": "2.11.12",
