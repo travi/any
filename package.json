@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/travi/any#readme",
   "dependencies": {
-    "chance": "1.0.4"
+    "chance": "1.0.4",
+    "lodash": "4.15.0"
   },
   "devDependencies": {
     "@travi/eslint-config-travi": "0.3.0",
@@ -46,7 +47,6 @@
     "grunt-rollup": "0.8.0",
     "istanbul": "1.0.0-alpha.2",
     "load-grunt-config": "0.19.2",
-    "lodash": "4.15.0",
     "mocha": "3.0.2",
     "proxyquire": "1.7.10",
     "referee": "1.2.0",
