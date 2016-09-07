@@ -23,3 +23,8 @@ for generating the data. So why not just use Chance.js directly?
   Chance.js does not have a simple-object generator, so I've included that on my own.
 * Many of my tests need lists generated. Like objects, Chance.js does not generate lists, so I've included this
   on my own.
+
+## Install
+```
+$ npm install @travi/any --save-dev
+```
