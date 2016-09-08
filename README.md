@@ -20,11 +20,14 @@ for generating the data. So why not just use Chance.js directly?
 * I can set my default options to align with my typical conventions rather than having to repeatedly configure
   Chance.js's very flexible API
 * Lots of my tests need objects to be generated, but the structure of those objects typically does not matter.
-  Chance.js does not have a simple-object generator, so I've included that on my own.
-* Many of my tests need lists generated. Like objects, Chance.js does not generate lists, so I've included this
+  Chance.js does not have a [simple-object generator](docs/API.md#simpleobject), so I've included that on my own.
+* Many of my tests need [lists](docs/API.md#listof) generated. Like objects, Chance.js does not generate lists, so I've included this
   on my own.
 
 ## Install
 ```
 $ npm install @travi/any --save-dev
 ```
+
+## Documentation
+* [API](docs/API.md)
