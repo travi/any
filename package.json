@@ -52,7 +52,7 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rollup-plugin-babel": "2.6.1",
-    "sinon": "1.17.5",
+    "sinon": "1.17.6",
     "time-grunt": "1.4.0"
   }
 }
