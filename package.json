@@ -47,7 +47,7 @@
     "grunt-rollup": "0.8.0",
     "istanbul": "1.0.0-alpha.2",
     "load-grunt-config": "0.19.2",
-    "mocha": "3.0.2",
+    "mocha": "3.1.0",
     "proxyquire": "1.7.10",
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
