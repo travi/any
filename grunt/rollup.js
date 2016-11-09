@@ -18,7 +18,7 @@ module.exports = {
     },
     es6: {
         options: {
-            format: 'es6',
+            format: 'es',
             plugins: [
                 babel({
                     babelrc: false,
@@ -28,7 +28,7 @@ module.exports = {
             ]
         },
         files: {
-            'dist/any.mjs': 'any.js'
+            'dist/any.module.js': 'any.js'
         }
     }
 };

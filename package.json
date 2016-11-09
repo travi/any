@@ -3,7 +3,7 @@
   "version": "0.6.1",
   "description": "random data generator for when test data is insignificant",
   "main": "dist/any.js",
-  "jsnext:main": "dist/any.mjs",
+  "module": "dist/any.module.js",
   "scripts": {
     "test": "grunt",
     "preversion": "npm test",
