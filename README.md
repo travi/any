@@ -4,6 +4,9 @@
 [![Coverage Status](http://img.shields.io/coveralls/travi/any.svg?style=flat)](https://coveralls.io/r/travi/any?branch=master)
 
 [![npm](https://img.shields.io/npm/v/@travi/any.svg?maxAge=2592000)](https://www.npmjs.com/package/@travi/any)
+[![license](https://img.shields.io/github/license/travi/any.svg)](LICENSE)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 
 Random data generator for when test data is insignificant. Tailoring data too closely for the domain can end
 up being confusing in tests because it distracts from the behavior that is actually important in the test. This
