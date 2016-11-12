@@ -8,7 +8,9 @@
     "test": "grunt",
     "preversion": "npm test",
     "prepublish": "grunt build",
-    "postpublish": "greenkeeper-postpublish"
+    "postpublish": "greenkeeper-postpublish",
+    "precommit": "npm test",
+    "commitmsg": "validate-commit-msg"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,7 @@
     "babel-register": "6.18.0",
     "chai": "3.5.0",
     "coveralls": "2.11.15",
+    "cz-conventional-changelog": "1.2.0",
     "greenkeeper-postpublish": "1.0.1",
     "grunt": "1.0.1",
     "grunt-cli": "1.2.0",
@@ -45,6 +48,7 @@
     "grunt-eslint": "19.0.0",
     "grunt-mocha-istanbul": "5.0.2",
     "grunt-rollup": "1.0.1",
+    "husky": "0.11.9",
     "istanbul": "1.0.0-alpha.2",
     "load-grunt-config": "0.19.2",
     "mocha": "3.1.2",
@@ -53,6 +57,12 @@
     "referee-sinon": "1.0.3",
     "rollup-plugin-babel": "2.6.1",
     "sinon": "2.0.0-pre.4",
-    "time-grunt": "1.4.0"
+    "time-grunt": "1.4.0",
+    "validate-commit-msg": "2.8.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
