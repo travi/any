@@ -30,7 +30,7 @@
   "homepage": "https://github.com/travi/any#readme",
   "dependencies": {
     "chance": "1.0.4",
-    "lodash": "4.17.0"
+    "lodash": "4.17.1"
   },
   "devDependencies": {
     "@travi/eslint-config-travi": "0.3.0",
