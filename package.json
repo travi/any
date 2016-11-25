@@ -51,7 +51,7 @@
     "husky": "0.11.9",
     "istanbul": "1.0.0-alpha.2",
     "load-grunt-config": "0.19.2",
-    "mocha": "3.1.2",
+    "mocha": "3.2.0",
     "proxyquire": "1.7.10",
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
