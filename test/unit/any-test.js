@@ -28,6 +28,14 @@ suite('random data generator', () => {
         assert.equal(any.default.integer(options), int);
     });
 
+    test('that a floating point number is generated', () => {
+        const float = chance.floating();
+        chanceStub.floating.withArgs(options).returns(float);
+
+        assert.equal(any.float(options), float);
+        assert.equal(any.default.float(options), float);
+    });
+
     test('that a string is generated', () => {
         const string = chance.string();
         chanceStub.string.withArgs(options).returns(string);

@@ -127,6 +127,19 @@ any.integer();
 // 8526341888540672
 ```
 
+## `float`
+
+Direct usage of [`floating()` from chance.js](http://chancejs.com/#floating). Options are passed directly to the chance 
+method so refer to its documentation for what is available.
+
+### Example
+
+```js
+any.float();
+
+// -114981703621.0176
+```
+
 ## `boolean`
 
 Produces a random boolean value (`true` or `false`).

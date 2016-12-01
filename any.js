@@ -5,6 +5,7 @@ const chance = new Chance();
 const DEFAULT_SIZE_RANGE = {max: 20, min: 1};
 
 export const integer = (options) => chance.natural(options);
+export const float = (options) => chance.floating(options);
 export const string = (options) => chance.string(options);
 export const word = () => chance.word();
 export const url = (options) => chance.url(options);
@@ -69,6 +70,7 @@ export default {
     string,
     word,
     integer,
+    float,
     boolean,
     url,
     email,
