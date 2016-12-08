@@ -1,11 +1,12 @@
 # Random data generator
 
+[![npm](https://img.shields.io/npm/v/@travi/any.svg?maxAge=2592000)](https://www.npmjs.com/package/@travi/any)
+[![license](https://img.shields.io/github/license/travi/any.svg)](LICENSE)
 [![Build Status](https://img.shields.io/travis/travi/any.svg?style=flat)](https://travis-ci.org/travi/any)
 [![Coverage Status](http://img.shields.io/coveralls/travi/any.svg?style=flat)](https://coveralls.io/r/travi/any?branch=master)
 
-[![npm](https://img.shields.io/npm/v/@travi/any.svg?maxAge=2592000)](https://www.npmjs.com/package/@travi/any)
-[![license](https://img.shields.io/github/license/travi/any.svg)](LICENSE)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 
 Random data generator for when test data is insignificant. Tailoring data too closely for the domain can end
