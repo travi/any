@@ -56,7 +56,7 @@
     "proxyquire": "1.7.10",
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
-    "rollup-plugin-babel": "2.6.1",
+    "rollup-plugin-babel": "2.7.0",
     "semantic-release": "6.3.2",
     "sinon": "2.0.0-pre.4",
     "time-grunt": "1.4.0",
