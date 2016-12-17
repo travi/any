@@ -38,7 +38,7 @@
     "lodash": "4.17.2"
   },
   "devDependencies": {
-    "@travi/eslint-config-travi": "0.3.0",
+    "@travi/eslint-config-travi": "1.0.0-beta.2",
     "babel-cli": "6.18.0",
     "babel-preset-es2015-node": "6.1.1",
     "babel-preset-es2015-rollup": "3.0.0",
@@ -46,6 +46,7 @@
     "chai": "3.5.0",
     "coveralls": "2.11.15",
     "cz-conventional-changelog": "1.2.0",
+    "formatio": "1.2.0",
     "greenkeeper-postpublish": "1.0.1",
     "husky": "0.12.0",
     "istanbul": "1.0.0-alpha.2",
