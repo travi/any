@@ -5,7 +5,6 @@ grunt/
 coverage/
 .nyc_output
 
-Gruntfile.js
 .editorconfig
 .gitattributes
 .nvmrc

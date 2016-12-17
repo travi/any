@@ -12,6 +12,7 @@
     "tests:unit": "mocha --recursive test/unit/",
     "test": "run-s clean lint:* coverage",
     "coverage": "nyc run-s tests:unit",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls",
     "preversion": "npm test",
     "prepublish": "npm run build",
     "postpublish": "greenkeeper-postpublish",
