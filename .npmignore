@@ -3,11 +3,13 @@ node_modules/
 test/
 grunt/
 coverage/
+.nyc_output
 
 Gruntfile.js
 .editorconfig
 .gitattributes
 .nvmrc
+.nycrc
 .babelrc
 .travis.yml
 
