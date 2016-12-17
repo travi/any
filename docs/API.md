@@ -2,8 +2,8 @@
 
 ## `simpleObject`
 
-Produces a simple object with a random number of key/value pairs. Each key is a random [word](#word), and each value is
-a random [string](#string)
+Produces a simple object with a random number of key/value pairs. Each key is a
+random [word](#word), and each value is a random [string](#string)
 
 ### Example
 
@@ -17,13 +17,14 @@ any.simpleObject();
 
 Produces a simple object with the keys defined from the provided list of keys
 
-### Parameters
+### `objectWithKeys` parameters
+
 * `keys` (required): list of keys to be used for the produced object's keys
 * `options`: object to provide configuration options
-    * `factory`: factory function to be used to create each of the values for the produced object. defaults to
-      [`string`](#string), if not provided
+  * `factory`: factory function to be used to create each of the values for the
+    produced object. defaults to [`string`](#string), if not provided
 
-### Examples
+### `objectWithKeys` examples
 
 ```js
 any.objectWithKeys(['foo', 'bar', 'baz']);
@@ -41,10 +42,11 @@ any.objectWithKeys(['foo', 'bar', 'baz'], {factory: any.url});
 
 Returns one item at random from the provided list.
 
-### Parameters
+### `fromList` parameters
+
 * `list` (required): list of items to choose from
 
-### Example
+### `fromList` example
 
 ```js
 any.fromList(['foo', 'bar', 'baz']);
@@ -56,14 +58,16 @@ any.fromList(['foo', 'bar', 'baz']);
 
 Produces a list of random items from the provided factory function
 
-### Parameters
+### `listOf` parameters
+
 * `factory` (required): the factory function for producing the items for the list.
 * `options`: object to provide configuration options
-    * `size`: length of list that should be produced. defaults to a random number between `1` and `20`, if
-      not provided.
-    * `uniqueOn`: property on the produced objects that needs to be unique within the resulting list
+  * `size`: length of list that should be produced. defaults to a random number
+    between `1` and `20`, if not provided.
+  * `uniqueOn`: property on the produced objects that needs to be unique within
+    the resulting list
 
-### Examples
+### `listOf` examples
 
 ```js
 any.listOf(any.string);
@@ -85,15 +89,17 @@ any.listOf(() => ({ id: any.integer(), foo: any.string() }), {uniqueOn: 'id'});
 
 ## `string`
 
-Direct usage of [`string()` from chance.js](http://chancejs.com/#string). Options are passed directly to the chance
-method so refer to its documentation for what is available.
+Direct usage of [`string()` from chance.js](http://chancejs.com/#string).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
 
 ### Note
 
-Be aware that `string()` can include special characters that may not be suitable for some use cases. If they would
-cause issues, you may prefer [`word()`](#word) instead.
+Be aware that `string()` can include special characters that may not be suitable
+for some use cases. If they would cause issues, you may prefer [`word()`](#word)
+instead.
 
-### Example
+### `string` example
 
 ```js
 any.string();
@@ -103,10 +109,11 @@ any.string();
 
 ## `word`
 
-An almost direct usage of [`word()` from chance.js](http://chancejs.com/#word). No options are passed to the chance
-method because I have not had a need for anything but the default version yet.
+An almost direct usage of [`word()` from chance.js](http://chancejs.com/#word).
+No options are passed to the chance method because I have not had a need for
+anything but the default version yet.
 
-### Example
+### `word` example
 
 ```js
 any.word();
@@ -116,10 +123,12 @@ any.word();
 
 ## `integer`
 
-Produces a random integer > 0. Direct usage of [`natural()` from chance.js](http://chancejs.com/#natural). Options are
-passed directly to the chance method so refer to its documentation for what is available.
+Produces a random integer > 0. Direct usage of
+[`natural()` from chance.js](http://chancejs.com/#natural). Options are passed
+directly to the chance method so refer to its documentation for what is
+available.
 
-### Example
+### `integer` example
 
 ```js
 any.integer();
@@ -129,10 +138,11 @@ any.integer();
 
 ## `float`
 
-Direct usage of [`floating()` from chance.js](http://chancejs.com/#floating). Options are passed directly to the chance 
-method so refer to its documentation for what is available.
+Direct usage of [`floating()` from chance.js](http://chancejs.com/#floating).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
 
-### Example
+### `float` example
 
 ```js
 any.float();
@@ -144,7 +154,7 @@ any.float();
 
 Produces a random boolean value (`true` or `false`).
 
-### Example
+### `boolean` example
 
 ```js
 any.boolean();
@@ -154,10 +164,11 @@ any.boolean();
 
 ## `url`
 
-Direct usage of [`url()` from chance.js](http://chancejs.com/#url). Options are passed directly to the chance
-method so refer to its documentation for what is available.
+Direct usage of [`url()` from chance.js](http://chancejs.com/#url). Options are
+passed directly to the chance method so refer to its documentation for what is
+available.
 
-### Example
+### `url` example
 
 ```js
 any.url();
@@ -167,10 +178,11 @@ any.url();
 
 ## `email`
 
-An almost direct usage of [`email()` from chance.js](http://chancejs.com/#email). No options are passed to the chance
-method because I have not had a need for anything but the default version yet.
+An almost direct usage of [`email()` from chance.js](http://chancejs.com/#email).
+No options are passed to the chance method because I have not had a need for
+anything but the default version yet.
 
-### Example
+### `email` example
 
 ```js
 any.email();
@@ -180,11 +192,12 @@ any.email();
 
 ## `date`
 
-An almost direct usage of [`date()` from chance.js](http://chancejs.com/#date). No options passed to the `any` method
-are passed to the `chance` method, but the `{string: true}` option is passed because I have only had a use for the string
-form of random dates so far.
+An almost direct usage of [`date()` from chance.js](http://chancejs.com/#date).
+No options passed to the `any` method are passed to the `chance` method, but
+the `{string: true}` option is passed because I have only had a use for the
+string form of random dates so far.
 
-### Example
+### `date` example
 
 ```js
 any.date();
