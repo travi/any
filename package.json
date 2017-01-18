@@ -57,7 +57,7 @@
     "markdownlint-cli": "0.2.0",
     "mocha": "3.2.0",
     "npm-run-all": "4.0.1",
-    "nyc": "10.0.0",
+    "nyc": "10.1.0",
     "proxyquire": "1.7.10",
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
