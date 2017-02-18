@@ -61,7 +61,7 @@
     "proxyquire": "1.7.11",
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
-    "rimraf": "2.5.4",
+    "rimraf": "2.6.0",
     "rollup": "0.41.4",
     "rollup-plugin-babel": "2.7.1",
     "semantic-release": "6.3.2",
