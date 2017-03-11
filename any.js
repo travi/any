@@ -15,9 +15,8 @@ const email = () => chance.email();
 const date = () => chance.date({string: true});
 
 function simpleObject() {
-  const
-    object = {},
-    size = integer(DEFAULT_SIZE_RANGE);
+  const object = {};
+  const size = integer(DEFAULT_SIZE_RANGE);
 
   for (let i = 0; i < size; i += 1) {
     object[word()] = string();

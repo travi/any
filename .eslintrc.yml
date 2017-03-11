@@ -1,9 +1,4 @@
 extends: '@travi/travi/rules/es6'
 
 rules:
-  one-var: off
   func-style: off
-  no-magic-numbers:
-    - error
-    - ignore:
-        - 1
