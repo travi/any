@@ -41,7 +41,7 @@
     "lodash": "4.17.4"
   },
   "devDependencies": {
-    "@travi/eslint-config-travi": "1.1.0",
+    "@travi/eslint-config-travi": "1.1.1",
     "babel-cli": "6.23.0",
     "babel-preset-es2015-node": "6.1.1",
     "babel-preset-es2015-rollup": "3.0.0",
@@ -61,10 +61,10 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.1",
-    "rollup": "0.41.6",
+    "rollup": "0.41.5",
     "rollup-plugin-babel": "2.7.1",
     "semantic-release": "6.3.2",
-    "sinon": "2.0.0-pre.6",
+    "sinon": "2.0.0",
     "validate-commit-msg": "2.11.2"
   },
   "config": {
