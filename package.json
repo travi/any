@@ -57,7 +57,7 @@
     "mocha": "3.4.1",
     "npm-run-all": "4.0.2",
     "nyc": "10.3.2",
-    "proxyquire": "1.7.11",
+    "proxyquire": "1.8.0",
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.1",
