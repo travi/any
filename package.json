@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/travi/any#readme",
   "dependencies": {
-    "chance": "1.0.9",
+    "chance": "1.0.10",
     "lodash": "4.17.4"
   },
   "devDependencies": {
