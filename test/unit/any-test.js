@@ -48,23 +48,37 @@ suite('random data generator', () => {
     assert.equal(any.url(options), url);
   });
 
-  test('that a url is generated', () => {
+  test('that a word is generated', () => {
     const word = chance.word();
-    chanceStub.word.returns(word);
+    chanceStub.word.withArgs(options).returns(word);
 
     assert.equal(any.word(options), word);
   });
 
+  test('that a sentence is generated', () => {
+    const sentence = chance.sentence();
+    chanceStub.sentence.withArgs(options).returns(sentence);
+
+    assert.equal(any.sentence(options), sentence);
+  });
+
+  test('that a paragraph is generated', () => {
+    const paragraph = chance.paragraph();
+    chanceStub.paragraph.withArgs(options).returns(paragraph);
+
+    assert.equal(any.paragraph(options), paragraph);
+  });
+
   test('that a boolean is generated', () => {
     const boolean = chance.bool();
-    chanceStub.bool.returns(boolean);
+    chanceStub.bool.withArgs(options).returns(boolean);
 
     assert.equal(any.boolean(options), boolean);
   });
 
   test('that an email is generated', () => {
     const email = chance.email();
-    chanceStub.email.returns(email);
+    chanceStub.email.withArgs(options).returns(email);
 
     assert.equal(any.email(options), email);
   });
