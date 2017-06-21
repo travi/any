@@ -109,9 +109,9 @@ any.string();
 
 ## `word`
 
-An almost direct usage of [`word()` from chance.js](http://chancejs.com/#word).
-No options are passed to the chance method because I have not had a need for
-anything but the default version yet.
+Direct usage of [`word()` from chance.js](http://chancejs.com/#word).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
 
 ### `word` example
 
@@ -119,6 +119,37 @@ anything but the default version yet.
 any.word();
 
 // nitte
+```
+
+## `sentence`
+
+Direct usage of [`sentence()` from chance.js](http://chancejs.com/#sentence).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
+
+### `sentence` example
+
+```js
+any.sentence();
+
+// 'Witpevze mappos isoletu fo res bi geow pofin mu rupoho revzi utva ne.'
+```
+
+## `paragraph`
+
+Direct usage of [`paragraph()` from chance.js](http://chancejs.com/#paragraph).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
+
+### `paragraph` example
+
+```js
+any.paragraph();
+
+// 'Lel fi huepe jupu akse zej ire vesik kojvulom zon is biwuwkef pa. Uv hokivej voh ebu
+// numdogi akolo hik uwlez ta vacev ofdaimi acunetum suvet uhdab ir soglazo ju pafbeb. Pub
+// cezeh fuc kebamnul he ok luumoabi rawkig me fov pin zup biv risugra. Ralpunad apkomgib
+// alnirciw akel wa lus wahfum burog buol vecotihe abadahoj ugolo wovki ucojal fec.'
 ```
 
 ## `integer`
@@ -153,6 +184,8 @@ any.float();
 ## `boolean`
 
 Produces a random boolean value (`true` or `false`).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
 
 ### `boolean` example
 
@@ -178,9 +211,9 @@ any.url();
 
 ## `email`
 
-An almost direct usage of [`email()` from chance.js](http://chancejs.com/#email).
-No options are passed to the chance method because I have not had a need for
-anything but the default version yet.
+Direct usage of [`email()` from chance.js](http://chancejs.com/#email).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
 
 ### `email` example
 
