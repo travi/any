@@ -41,7 +41,7 @@
     "lodash": "4.17.4"
   },
   "devDependencies": {
-    "@travi/eslint-config-travi": "1.2.14",
+    "@travi/eslint-config-travi": "1.2.15",
     "babel-cli": "6.24.1",
     "babel-preset-es2015-node": "6.1.1",
     "babel-preset-es2015-rollup": "3.0.0",
