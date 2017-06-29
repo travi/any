@@ -1,5 +1,5 @@
 # Documentation
 
-* [API](docs/API.md)
-* [Debugging](docs/DEBUG.md)
+* [API](./API.md)
+* [Debugging](./DEBUG.md)
 * [Repo](https://github.com/travi/any)
