@@ -8,7 +8,7 @@
     "clean": "rimraf coverage/ lib/",
     "build": "rollup -c",
     "lint:js": "eslint .",
-    "lint:md": "globstar --node -- markdownlint **/*.md",
+    "lint:md": "globstar --node -- markdownlint *.md '**/*.md'",
     "tests:unit": "mocha --recursive test/unit/",
     "test": "run-s clean lint:* coverage",
     "coverage": "nyc run-s tests:unit",
@@ -38,7 +38,9 @@
   "homepage": "https://github.com/travi/any#readme",
   "dependencies": {
     "chance": "1.0.10",
-    "lodash": "4.17.4"
+    "debug": "2.6.8",
+    "lodash": "4.17.4",
+    "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
     "@travi/eslint-config-travi": "1.2.15",

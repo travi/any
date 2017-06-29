@@ -41,3 +41,4 @@ $ npm install @travi/any --save-dev
 ## Documentation
 
 * [API](docs/API.md)
+* [Debugging](docs/DEBUG.md)

@@ -16,9 +16,7 @@ suite('random data generator', () => {
     }).default;
   });
 
-  teardown(() => {
-    sandbox.restore();
-  });
+  teardown(() => sandbox.restore());
 
   test('that only positive integers are generated', () => {
     const int = chance.natural();

@@ -1,7 +1,14 @@
 import _ from 'lodash';
 import Chance from 'chance';
+import MersenneTwister from 'mersenne-twister';
 
-const chance = new Chance();
+const debug = require('debug')('any');
+
+const generator = new MersenneTwister();
+const seed = process.env.ANY_SEED || generator.random();
+debug(`randomness seed: ${seed}`);
+
+const chance = new Chance(seed);
 
 const DEFAULT_SIZE_RANGE = {max: 20, min: 1};
 
