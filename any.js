@@ -5,7 +5,8 @@ import MersenneTwister from 'mersenne-twister';
 const debug = require('debug')('any');
 
 const generator = new MersenneTwister();
-const seed = process.env.ANY_SEED || generator.random();
+// Multiply the random seed to match chance.js
+const seed = process.env.ANY_SEED || generator.random() * (10 ** 13);
 debug(`randomness seed: ${seed}`);
 
 const chance = new Chance(seed);
