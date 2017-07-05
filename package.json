@@ -43,7 +43,7 @@
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
-    "@travi/eslint-config-travi": "1.2.17",
+    "@travi/eslint-config-travi": "1.2.18",
     "babel-cli": "6.24.1",
     "babel-plugin-transform-exponentiation-operator": "6.24.1",
     "babel-preset-es2015-node": "6.1.1",
