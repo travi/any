@@ -108,6 +108,7 @@ suite('random data generator', () => {
       const object = any.simpleObject();
 
       assert.equal(Object.keys(object).length, objectSize);
+      assert.alwaysCalledWith(chanceStub.word, {syllables: 3});
       for (let i = 0; i < objectSize; i += 1) {
         assert.equal(object[words[i]], strings[i]);
       }

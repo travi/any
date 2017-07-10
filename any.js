@@ -29,7 +29,7 @@ function simpleObject() {
   const size = integer(DEFAULT_SIZE_RANGE);
 
   for (let i = 0; i < size; i += 1) {
-    object[word()] = string();
+    object[word({syllables: 3})] = string();
   }
 
   return object;
