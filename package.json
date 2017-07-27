@@ -54,7 +54,7 @@
     "cz-conventional-changelog": "2.0.0",
     "formatio": "1.2.0",
     "globstar": "1.0.0",
-    "greenkeeper-postpublish": "1.0.1",
+    "greenkeeper-postpublish": "1.1.0",
     "husky": "0.14.0",
     "markdownlint-cli": "0.3.0",
     "mocha": "3.4.2",
