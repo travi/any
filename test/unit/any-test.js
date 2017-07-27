@@ -48,9 +48,17 @@ suite('random data generator', () => {
 
   test('that a word is generated', () => {
     const word = chance.word();
-    chanceStub.word.withArgs(options).returns(word);
+    chanceStub.word.withArgs({syllables: 3, ...options}).returns(word);
 
     assert.equal(any.word(options), word);
+  });
+
+  test('that syllables can be overridden', () => {
+    const word = chance.word();
+    const expectedSyllables = any.integer();
+    chanceStub.word.withArgs({syllables: expectedSyllables, ...options}).returns(word);
+
+    assert.equal(any.word({syllables: expectedSyllables, ...options}), word);
   });
 
   test('that a sentence is generated', () => {

@@ -16,7 +16,7 @@ const DEFAULT_SIZE_RANGE = {max: 20, min: 1};
 const integer = options => chance.natural(options);
 const float = options => chance.floating(options);
 const string = options => chance.string(options);
-const word = options => chance.word(options);
+const word = options => chance.word({syllables: 3, ...options});
 const sentence = options => chance.sentence(options);
 const paragraph = options => chance.paragraph(options);
 const url = options => chance.url(options);
@@ -29,7 +29,7 @@ function simpleObject() {
   const size = integer(DEFAULT_SIZE_RANGE);
 
   for (let i = 0; i < size; i += 1) {
-    object[word({syllables: 3})] = string();
+    object[word()] = string();
   }
 
   return object;
