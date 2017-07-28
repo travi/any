@@ -31,6 +31,13 @@
     "chance"
   ],
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "contributors": [
+    {
+      "name": "Trevor Richardson",
+      "email": "tr@trevorrichardson.me",
+      "url": "https://twitter.com/intelxdesign"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/travi/any/issues"
