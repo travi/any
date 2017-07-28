@@ -31,6 +31,13 @@
     "chance"
   ],
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "contributors": [
+    {
+      "name": "Trevor Richardson",
+      "email": "tr@trevorrichardson.me",
+      "url": "https://twitter.com/intelxdesign"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/travi/any/issues"
@@ -48,6 +55,7 @@
     "babel-plugin-transform-exponentiation-operator": "6.24.1",
     "babel-preset-es2015-node": "6.1.1",
     "babel-preset-es2015-rollup": "3.0.0",
+    "babel-preset-stage-3": "6.24.1",
     "babel-register": "6.24.1",
     "chai": "4.1.0",
     "coveralls": "2.13.1",
