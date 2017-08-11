@@ -61,6 +61,14 @@ suite('random data generator', () => {
     assert.equal(any.word({syllables: expectedSyllables, ...options}), word);
   });
 
+  test('that length can be used', () => {
+    const word = chance.word();
+    const length = chance.integer();
+    chanceStub.word.withArgs({length, ...options}).returns(word);
+
+    assert.equal(any.word({length, ...options}), word);
+  });
+
   test('that a sentence is generated', () => {
     const sentence = chance.sentence();
     chanceStub.sentence.withArgs(options).returns(sentence);
