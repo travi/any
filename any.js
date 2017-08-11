@@ -16,13 +16,16 @@ const DEFAULT_SIZE_RANGE = {max: 20, min: 1};
 const integer = options => chance.natural(options);
 const float = options => chance.floating(options);
 const string = options => chance.string(options);
-const word = options => chance.word({syllables: 3, ...options});
 const sentence = options => chance.sentence(options);
 const paragraph = options => chance.paragraph(options);
 const url = options => chance.url(options);
 const boolean = options => chance.bool(options);
 const email = options => chance.email(options);
 const date = () => chance.date({string: true});
+
+function word(options = {}) {
+  return options.length ? chance.word(options) : chance.word({syllables: 3, ...options});
+}
 
 function simpleObject() {
   const object = {};
