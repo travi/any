@@ -22,7 +22,9 @@ Produces a simple object with the keys defined from the provided list of keys
 * `keys` (required): list of keys to be used for the produced object's keys
 * `options`: object to provide configuration options
   * `factory`: factory function to be used to create each of the values for the
-    produced object. defaults to [`string`](#string), if not provided
+    produced object
+    * receives the current key as `key`
+    * defaults to [`string`](#string), if not provided
 
 ### `objectWithKeys` examples
 

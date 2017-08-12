@@ -43,7 +43,7 @@ function objectWithKeys(keys, options = {}) {
 
   keys.forEach(key => {
     if (options.factory) {
-      object[key] = options.factory();
+      object[key] = options.factory(key);
     } else {
       object[key] = string();
     }

@@ -175,7 +175,7 @@ suite('random data generator', () => {
 
         values[i] = value;
 
-        factory.onCall(i).returns(value);
+        factory.withArgs(keys[i]).returns(value);
       }
 
       const object = any.objectWithKeys(keys, {factory});
