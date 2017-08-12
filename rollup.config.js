@@ -2,7 +2,7 @@
 import babel from 'rollup-plugin-babel';
 
 export default {
-  entry: 'any.js',
+  entry: 'src/index.js',
   plugins: [
     babel({
       babelrc: false,

@@ -4,7 +4,7 @@ import {assert} from 'chai';
 import proxyquire from 'proxyquire';
 import _ from 'lodash';
 import {chance, INTEGER_RANGE, randomListOfStrings} from '../helpers/data-generator';
-import realAny from '../../any';
+import realAny from '../../src/index';
 
 suite('list of', () => {
   let sandbox, any, chanceStub, listSize;
@@ -12,7 +12,7 @@ suite('list of', () => {
   setup(() => {
     sandbox = sinon.sandbox.create();
     chanceStub = sandbox.stub(new Chance());
-    any = proxyquire('../../any', {
+    any = proxyquire('../../src/index', {
       chance: sinon.stub().returns(chanceStub)
     }).default;
 

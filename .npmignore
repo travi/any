@@ -1,7 +1,7 @@
 .idea/
 node_modules/
 test/
-grunt/
+src/
 coverage/
 .nyc_output
 
@@ -11,5 +11,3 @@ coverage/
 .nycrc
 .babelrc
 .travis.yml
-
-any.js

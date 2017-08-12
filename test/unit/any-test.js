@@ -11,7 +11,7 @@ suite('random data generator', () => {
   setup(() => {
     sandbox = sinon.sandbox.create();
     chanceStub = sandbox.stub(new Chance());
-    any = proxyquire('../../any', {
+    any = proxyquire('../../src/index', {
       chance: sinon.stub().returns(chanceStub)
     }).default;
   });
