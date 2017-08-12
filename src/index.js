@@ -1,31 +1,5 @@
-import _ from 'lodash';
-import Chance from 'chance';
-import MersenneTwister from 'mersenne-twister';
-
-const debug = require('debug')('any');
-
-const generator = new MersenneTwister();
-// Multiply the random seed to match chance.js
-const seed = process.env.ANY_SEED || generator.random() * (10 ** 13);
-debug(`randomness seed: ${seed}`);
-
-const chance = new Chance(seed);
-
-const DEFAULT_SIZE_RANGE = {max: 20, min: 1};
-
-const integer = options => chance.natural(options);
-const float = options => chance.floating(options);
-const string = options => chance.string(options);
-const sentence = options => chance.sentence(options);
-const paragraph = options => chance.paragraph(options);
-const url = options => chance.url(options);
-const boolean = options => chance.bool(options);
-const email = options => chance.email(options);
-const date = () => chance.date({string: true});
-
-function word(options = {}) {
-  return options.length ? chance.word(options) : chance.word({syllables: 3, ...options});
-}
+import {string, boolean, date, email, float, integer, paragraph, sentence, url, word, DEFAULT_SIZE_RANGE} from './base';
+import listOf from './list-of';
 
 function simpleObject() {
   const object = {};
@@ -50,29 +24,6 @@ function objectWithKeys(keys, options = {}) {
   });
 
   return object;
-}
-
-function listOf(factory, options = {}) {
-  const listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
-
-  if (options.uniqueOn) {
-    const uniqueValues = {};
-
-    while (Object.keys(uniqueValues).length < listSize) {
-      const item = factory();
-      uniqueValues[item[options.uniqueOn]] = item;
-    }
-
-    return _.values(uniqueValues);
-  }
-
-  const list = [];
-
-  for (let i = 0; i < listSize; i += 1) {
-    list.push(factory());
-  }
-
-  return list;
 }
 
 function fromList(list) {

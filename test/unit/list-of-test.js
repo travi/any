@@ -1,32 +1,28 @@
-import Chance from 'chance';
 import sinon from 'sinon';
 import {assert} from 'chai';
-import proxyquire from 'proxyquire';
 import _ from 'lodash';
 import {chance, INTEGER_RANGE, randomListOfStrings} from '../helpers/data-generator';
+import * as baseGenerators from '../../src/base';
 import realAny from '../../src/index';
+import listOf from '../../src/list-of';
 
 suite('list of', () => {
-  let sandbox, any, chanceStub, listSize;
+  let sandbox, listSize;
 
   setup(() => {
-    sandbox = sinon.sandbox.create();
-    chanceStub = sandbox.stub(new Chance());
-    any = proxyquire('../../src/index', {
-      chance: sinon.stub().returns(chanceStub)
-    }).default;
-
     listSize = chance.natural(INTEGER_RANGE);
-    chanceStub.natural.withArgs({min: 1, max: 20}).returns(listSize);
+
+    sandbox = sinon.sandbox.create();
+
+    sandbox.stub(baseGenerators, 'integer');
+    baseGenerators.integer.withArgs({min: 1, max: 20}).returns(listSize);
   });
 
-  teardown(() => {
-    sandbox.restore();
-  });
+  teardown(() => sandbox.restore());
 
   test('that a list of random size is returned by default', () => {
     const factory = sinon.spy();
-    const list = any.listOf(factory);
+    const list = listOf(factory);
 
     assert.equal(list.length, listSize);
     assert.callCount(factory, listSize);
@@ -34,7 +30,7 @@ suite('list of', () => {
 
   test('that the list size can be set through the options', () => {
     const size = chance.natural(INTEGER_RANGE);
-    const list = any.listOf(sinon.spy(), {size});
+    const list = listOf(sinon.spy(), {size});
 
     assert.equal(list.length, size);
   });
@@ -42,9 +38,9 @@ suite('list of', () => {
 
   test('that the minimum range limit can be set through the options', () => {
     const min = chance.natural(INTEGER_RANGE);
-    chanceStub.natural.withArgs({min, max: 20}).returns(listSize);
+    baseGenerators.integer.withArgs({min, max: 20}).returns(listSize);
 
-    assert.equal(any.listOf(sinon.spy(), {min}).length, listSize);
+    assert.equal(listOf(sinon.spy(), {min}).length, listSize);
   });
 
   test('that uniqueness is enforced', () => {
@@ -53,15 +49,15 @@ suite('list of', () => {
     const min = chance.natural(INTEGER_RANGE);
     function factory() {
       return Object.assign({}, realAny.simpleObject(), {
-        [uniqueOn]: realAny.fromList([nonUniqueValue, chance.string()])
+        [uniqueOn]: baseGenerators.boolean() ? nonUniqueValue : baseGenerators.string()
       });
     }
-    chanceStub.natural.returns(listSize);
-    chanceStub.natural.withArgs(sinon.match({min})).returns(min);
+    baseGenerators.integer.returns(listSize);
+    baseGenerators.integer.withArgs(sinon.match({min})).returns(min);
 
-    const listOf = any.listOf(factory, {uniqueOn});
-    const minListOf = any.listOf(factory, {uniqueOn, min});
-    assert.lengthOf(_.uniqBy(listOf, uniqueOn), listOf.length);
+    const listOfItems = listOf(factory, {uniqueOn});
+    const minListOf = listOf(factory, {uniqueOn, min});
+    assert.lengthOf(_.uniqBy(listOfItems, uniqueOn), listOfItems.length);
     assert.isAtLeast(minListOf.length, min);
   });
 });
