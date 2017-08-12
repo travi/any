@@ -15,7 +15,6 @@
     "report-coverage": "nyc report --reporter=text-lcov | coveralls",
     "preversion": "npm test",
     "prepublish": "npm run build",
-    "postpublish": "greenkeeper-postpublish",
     "precommit": "npm test",
     "commitmsg": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
@@ -62,7 +61,6 @@
     "cz-conventional-changelog": "2.0.0",
     "formatio": "1.2.0",
     "globstar": "1.0.0",
-    "greenkeeper-postpublish": "1.3.0",
     "husky": "0.14.0",
     "markdownlint-cli": "0.3.0",
     "mocha": "3.5.0",
