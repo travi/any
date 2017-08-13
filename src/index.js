@@ -1,16 +1,6 @@
-import {string, boolean, date, email, float, integer, paragraph, sentence, url, word, DEFAULT_SIZE_RANGE} from './base';
+import {boolean, date, email, float, integer, paragraph, sentence, string, url, word} from './base';
 import listOf from './list-of';
-
-function simpleObject() {
-  const object = {};
-  const size = integer(DEFAULT_SIZE_RANGE);
-
-  for (let i = 0; i < size; i += 1) {
-    object[word()] = string();
-  }
-
-  return object;
-}
+import simpleObject from './simple-object';
 
 function objectWithKeys(keys, options = {}) {
   return keys
