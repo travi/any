@@ -2,7 +2,7 @@ import _ from 'lodash';
 import {integer, DEFAULT_SIZE_RANGE} from './base';
 
 export default function listOf(factory, options = {}) {
-  const listSize = options.size || integer(Object.assign({}, DEFAULT_SIZE_RANGE, options));
+  const listSize = options.size || integer({...DEFAULT_SIZE_RANGE, ...options});
 
   if (options.uniqueOn) {
     const uniqueValues = {};

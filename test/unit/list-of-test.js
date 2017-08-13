@@ -47,11 +47,10 @@ suite('list of', () => {
     const uniqueOn = chance.word();
     const nonUniqueValue = randomListOfStrings();
     const min = chance.natural(INTEGER_RANGE);
-    function factory() {
-      return Object.assign({}, realAny.simpleObject(), {
-        [uniqueOn]: baseGenerators.boolean() ? nonUniqueValue : baseGenerators.string()
-      });
-    }
+    const factory = () => ({
+      ...realAny.simpleObject(),
+      [uniqueOn]: baseGenerators.boolean() ? nonUniqueValue : baseGenerators.string()
+    });
     baseGenerators.integer.returns(listSize);
     baseGenerators.integer.withArgs(sinon.match({min})).returns(min);
 
