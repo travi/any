@@ -13,17 +13,9 @@ function simpleObject() {
 }
 
 function objectWithKeys(keys, options = {}) {
-  const object = {};
-
-  keys.forEach(key => {
-    if (options.factory) {
-      object[key] = options.factory(key);
-    } else {
-      object[key] = string();
-    }
-  });
-
-  return object;
+  return keys
+    .map(key => (options.factory ? [key, options.factory(key)] : [key, string()]))
+    .reduce((acc, [key, value]) => ({...acc, [key]: value}), {});
 }
 
 function fromList(list) {
