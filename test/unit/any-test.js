@@ -10,24 +10,10 @@ suite('random data generator', () => {
   setup(() => {
     sandbox = sinon.sandbox.create();
 
-    sandbox.stub(baseGenerators, 'integer');
     sandbox.stub(baseGenerators, 'string');
   });
 
   teardown(() => sandbox.restore());
-
-  suite('from list', () => {
-    test('that an item from the provided list is returned', () => {
-      const list = randomListOfStrings();
-      const indexRange = {min: 0, max: list.length - 1};
-      const index = chance.natural(indexRange);
-      baseGenerators.integer.withArgs(indexRange).returns(index);
-
-      const item = any.fromList(list);
-      assert.isDefined(item);
-      assert.equal(item, list[index]);
-    });
-  });
 
   suite('object with keys', () => {
     test('that an object is generated from the list of keys', () => {
