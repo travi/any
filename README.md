@@ -1,5 +1,7 @@
 # Random data generator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/travi/any.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/@travi/any.svg?maxAge=2592000)](https://www.npmjs.com/package/@travi/any)
 [![license](https://img.shields.io/github/license/travi/any.svg)](LICENSE)
 [![Build Status](https://img.shields.io/travis/travi/any.svg?style=flat)](https://travis-ci.org/travi/any)
