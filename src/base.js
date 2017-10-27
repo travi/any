@@ -19,6 +19,7 @@ export const url = options => chance.url(options);
 export const boolean = options => chance.bool(options);
 export const email = options => chance.email(options);
 export const date = () => chance.date({string: true});
+export const subset = (list, {size = 2} = {}) => chance.pickset(list, size);
 
 export function word(options = {}) {
   return options.length ? chance.word(options) : chance.word({syllables: 3, ...options});

@@ -241,3 +241,26 @@ any.date();
 
 // 10/24/2028
 ```
+
+## `subset`
+
+An almost direct usage of [`pickset()` from chance.js](http://chancejs.com/#pickset).
+The `size` option is passed directly to the chance method's `quantity` argument so
+refer to its documentation for what is available.
+
+### `subset` parameters
+
+* `list` (required): list of items the subset will be taken from
+* `options`: object to provide configuration options
+  * `size`: size of the subset to attempt to generate from the given list
+    * if the value is larger than the size of the list, the subset will
+      be the entire list.
+    * defaults to `2` if not provided
+
+### `subset` example
+
+```js
+any.subset(['one', 'two', 'three', 'four'], 2);
+
+// ['two', 'four']
+```
