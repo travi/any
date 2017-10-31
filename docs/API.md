@@ -64,8 +64,10 @@ Produces a list of random items from the provided factory function
 
 * `factory` (required): the factory function for producing the items for the list.
 * `options`: object to provide configuration options
-  * `size`: length of list that should be produced. defaults to a random number
-    between `1` and `20`, if not provided.
+  * `size`: length of list that should be produced
+    * defaults to a random number between `1` and `20`, if not provided
+    * the default range of potential sizes can be overridden by providing options
+      for [integer](#integer)
   * `uniqueOn`: property on the produced objects that needs to be unique within
     the resulting list
 
