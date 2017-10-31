@@ -2,7 +2,7 @@
 import babel from 'rollup-plugin-babel';
 
 export default {
-  entry: 'src/index.js',
+  input: 'src/index.js',
   plugins: [
     babel({
       babelrc: false,
@@ -14,8 +14,13 @@ export default {
       plugins: ['babel-plugin-transform-exponentiation-operator']
     })
   ],
-  targets: [
-    {dest: 'lib/any.cjs.js', format: 'cjs'},
-    {dest: 'lib/any.es.js', format: 'es'}
+  external: [
+    'chance',
+    'mersenne-twister',
+    'lodash'
+  ],
+  output: [
+    {file: 'lib/any.cjs.js', format: 'cjs'},
+    {file: 'lib/any.es.js', format: 'es'}
   ]
 };
