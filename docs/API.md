@@ -23,7 +23,7 @@ Produces a simple object with the keys defined from the provided list of keys
 * `options`: object to provide configuration options
   * `factory`: factory function to be used to create each of the values for the
     produced object
-    * receives the current key as `key`
+    * receives the current key as the first argument
     * defaults to [`string`](#string), if not provided
 
 ### `objectWithKeys` examples
@@ -38,6 +38,53 @@ any.objectWithKeys(['foo', 'bar', 'baz']);
 any.objectWithKeys(['foo', 'bar', 'baz'], {factory: any.url});
 
 // { foo: 'http://hopap.lr/dupro', bar: 'http://kolore.np/cozmavje', baz: 'http://udegowum.cd/ohobasmo' }
+```
+
+```js
+any.objectWithKeys(['foo', 'bar', 'baz'], {factory: id => ({...any.simpleObject(), id})});
+
+/*
+{
+  foo: {
+     ipsawiw: '$McveM',
+     comgahra: ']TORpXOYqKQz&G]h',
+     ranimedo: 'Q^Y)ga2FG^jPzs](',
+     owabopmom: 'YQz[MoIEVHLbVG',
+     jebaru: 'qd&TpwaMEp8Vz#al8C',
+     zuwbedil: 'LC&c3$gPxI',
+     id: 'foo'
+  },
+  bar: {
+     jahaluz: '#HD0Zqs$QLxAC@Lrb*',
+     ekofesi: 'uhAOs',
+     veuhotuh: 'ob1K2TDc5Q',
+     zuufciw: 'L&hqNtx@',
+     riptutru: 'mYSXLZh#OmWvaJC2',
+     obebetmi: '[E@yC^xTBia*]kdvfC',
+     hugmoug: 'DfV8Qs9f8O433etJ',
+     zusurare: '0I0!xzrxEN$f4',
+     gonefo: 'YkLh9Sg&f7o%K)VDT',
+     watbihli: '3F2]ofS',
+     elaecave: 'iY@uTDWy@J',
+     id: 'bar'
+  },
+  baz: {
+     zehitek: '7$GlW8N',
+     upagpu: '9^UDxLQKp',
+     aniheiju: '9$lJPW6$eXhPf$GFa',
+     ekaradcun: ')nD1)rC&c^',
+     molilji: 'qvr7dW$Ve0uR3fkZ]',
+     jebowibuf: '0G6vTn)71NsXWsr]ypd',
+     wednotso: '2hHmqvDlw&&!^ycJ0',
+     arewibvuf: '*N^&UXo$c&eAiF^',
+     gutuet: '^JHXnzETi*VSuUy(3b',
+     molwadi: 'x!dAw',
+     fuglekpe: 'WqDOaU2[LdAvHm',
+     ireakiuso: '@VG9BF$)F',
+     id: 'baz'
+   }
+ }
+ */
 ```
 
 ## `fromList`
