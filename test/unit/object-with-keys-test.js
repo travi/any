@@ -45,7 +45,7 @@ suite('object with keys', () => {
 
       values[i] = value;
 
-      factory.withArgs(keys[i]).returns(value);
+      factory.withArgs(keys[i], i).returns(value);
     }
 
     const object = objectWithKeys(keys, {factory});

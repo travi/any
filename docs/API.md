@@ -23,7 +23,7 @@ Produces a simple object with the keys defined from the provided list of keys
 * `options`: object to provide configuration options
   * `factory`: factory function to be used to create each of the values for the
     produced object
-    * receives the current key as the first argument
+    * receives the current key as the first argument and the index as the second
     * defaults to [`string`](#string), if not provided
 
 ### `objectWithKeys` examples
@@ -85,6 +85,20 @@ any.objectWithKeys(['foo', 'bar', 'baz'], {factory: id => ({...any.simpleObject(
    }
  }
  */
+```
+
+```js
+const qux = ['a', 'b', 'c'];
+
+any.objectWithKeys(['foo', 'bar', 'baz'], {factory: (id, index) => ({id, letter: qux[index]})});
+
+/*
+{
+  foo: { id: 'foo', letter: 'a' },
+  bar: { id: 'bar', letter: 'b' },
+  baz: { id: 'baz', letter: 'c' }
+}
+*/
 ```
 
 ## `fromList`
