@@ -4,10 +4,12 @@ notifications:
 before_script:
 - npm run greenkeeper:update-lockfile
 - npm ls >/dev/null
+script:
+- npm test
+- npm run semantic-release
 after_script: npm run greenkeeper:upload-lockfile
 after_success:
   - npm run report-coverage
-  - npm run semantic-release
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
