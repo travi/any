@@ -63,7 +63,7 @@
     "cz-conventional-changelog": "2.1.0",
     "formatio": "1.2.0",
     "globstar": "1.0.0",
-    "greenkeeper-lockfile": "1.12.0",
+    "greenkeeper-lockfile": "1.13.1",
     "husky": "0.14.3",
     "markdownlint-cli": "0.6.0",
     "mocha": "5.0.0",
@@ -73,10 +73,10 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.2",
-    "rollup": "0.54.1",
+    "rollup": "0.55.0",
     "rollup-plugin-babel": "3.0.3",
-    "semantic-release": "12.2.2",
-    "sinon": "4.1.6",
+    "semantic-release": "12.2.4",
+    "sinon": "4.2.1",
     "validate-commit-msg": "2.14.0"
   },
   "config": {
