@@ -76,7 +76,7 @@
     "rimraf": "2.6.2",
     "rollup": "0.55.1",
     "rollup-plugin-babel": "3.0.3",
-    "semantic-release": "12.2.5",
+    "semantic-release": "12.4.1",
     "sinon": "4.2.2"
   },
   "config": {
