@@ -20,7 +20,7 @@ export default {
     'lodash'
   ],
   output: [
-    {file: 'lib/any.cjs.js', format: 'cjs'},
-    {file: 'lib/any.es.js', format: 'es'}
+    {file: 'lib/any.cjs.js', format: 'cjs', sourcemap: true},
+    {file: 'lib/any.es.js', format: 'es', sourcemap: true}
   ]
 };
