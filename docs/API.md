@@ -124,6 +124,7 @@ Produces a list of random items from the provided factory function
 ### `listOf` parameters
 
 * `factory` (required): the factory function for producing the items for the list.
+  * receives the current index as the first argument
 * `options`: object to provide configuration options
   * `size`: length of list that should be produced
     * defaults to a random number between `1` and `20`, if not provided

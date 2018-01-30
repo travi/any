@@ -26,6 +26,7 @@ suite('list of', () => {
 
     assert.equal(list.length, listSize);
     assert.callCount(factory, listSize);
+    list.forEach((ignored, index) => assert.calledWith(factory, index));
   });
 
   test('that the list size can be set through the options', () => {
@@ -47,10 +48,10 @@ suite('list of', () => {
     const uniqueOn = chance.word();
     const nonUniqueValue = randomListOfStrings();
     const min = chance.natural(INTEGER_RANGE);
-    const factory = () => ({
+    const factory = sinon.stub().callsFake(() => ({
       ...realAny.simpleObject(),
       [uniqueOn]: baseGenerators.boolean() ? nonUniqueValue : baseGenerators.string()
-    });
+    }));
     baseGenerators.integer.returns(listSize);
     baseGenerators.integer.withArgs(sinon.match({min})).returns(min);
 
@@ -58,5 +59,6 @@ suite('list of', () => {
     const minListOf = listOf(factory, {uniqueOn, min});
     assert.lengthOf(_.uniqBy(listOfItems, uniqueOn), listOfItems.length);
     assert.isAtLeast(minListOf.length, min);
+    listOfItems.forEach((ignored, index) => assert.calledWith(factory, index));
   });
 });
