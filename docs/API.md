@@ -1,5 +1,21 @@
 # API Reference
 
+* [`simpleObject`](#simpleobject)
+* [`objectWithKeys`](#objectwithkeys)
+* [`fromList`](#fromlist)
+* [`listOf`](#listof)
+* [`string`](#string)
+* [`word`](#word)
+* [`sentence`](#sentence)
+* [`paragraph`](#paragraph)
+* [`integer`](#integer)
+* [`float`](#float)
+* [`boolean`](#boolean)
+* [`url`](#url)
+* [`email`](#email)
+* [`date`](#date)
+* [`subset`](#subset)
+
 ## `simpleObject`
 
 Produces a simple object with a random number of key/value pairs. Each key is a
