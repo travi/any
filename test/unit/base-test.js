@@ -7,6 +7,7 @@ import {chance, randomListOfStrings} from '../helpers/data-generator';
 suite('base generators', () => {
   let sandbox, any, chanceStub;
   const options = {foo: 'bar'};
+  const primitive = chance.natural();
 
   setup(() => {
     sandbox = sinon.sandbox.create();
@@ -25,11 +26,23 @@ suite('base generators', () => {
     assert.equal(any.integer(options), int);
   });
 
+  test('that primitives are not passed as options', () => {
+    any.integer(primitive);
+
+    assert.calledWith(chanceStub.natural, undefined);
+  });
+
   test('that a floating point number is generated', () => {
     const float = chance.floating();
     chanceStub.floating.withArgs(options).returns(float);
 
     assert.equal(any.float(options), float);
+  });
+
+  test('that primitives are not passed as options', () => {
+    any.float(primitive);
+
+    assert.calledWith(chanceStub.floating, undefined);
   });
 
   test('that a string is generated', () => {
@@ -39,11 +52,23 @@ suite('base generators', () => {
     assert.equal(any.string(options), string);
   });
 
+  test('that primitives are not passed as options', () => {
+    any.string(primitive);
+
+    assert.calledWith(chanceStub.string, undefined);
+  });
+
   test('that a url is generated', () => {
     const url = chance.url();
     chanceStub.url.withArgs(options).returns(url);
 
     assert.equal(any.url(options), url);
+  });
+
+  test('that primitives are not passed as options', () => {
+    any.url(primitive);
+
+    assert.calledWith(chanceStub.url, undefined);
   });
 
   test('that a word is generated', () => {
@@ -61,6 +86,12 @@ suite('base generators', () => {
     assert.equal(any.word({syllables: expectedSyllables, ...options}), word);
   });
 
+  test('that primitives are not passed as options', () => {
+    any.word(primitive);
+
+    assert.calledWith(chanceStub.word, {syllables: 3});
+  });
+
   test('that length can be used', () => {
     const word = chance.word();
     const length = chance.integer();
@@ -76,11 +107,23 @@ suite('base generators', () => {
     assert.equal(any.sentence(options), sentence);
   });
 
+  test('that primitives are not passed as options', () => {
+    any.sentence(primitive);
+
+    assert.calledWith(chanceStub.sentence, undefined);
+  });
+
   test('that a paragraph is generated', () => {
     const paragraph = chance.paragraph();
     chanceStub.paragraph.withArgs(options).returns(paragraph);
 
     assert.equal(any.paragraph(options), paragraph);
+  });
+
+  test('that primitives are not passed as options', () => {
+    any.paragraph(primitive);
+
+    assert.calledWith(chanceStub.paragraph, undefined);
   });
 
   test('that a boolean is generated', () => {
@@ -90,11 +133,23 @@ suite('base generators', () => {
     assert.equal(any.boolean(options), boolean);
   });
 
+  test('that primitives are not passed as options', () => {
+    any.boolean(primitive);
+
+    assert.calledWith(chanceStub.bool, undefined);
+  });
+
   test('that an email is generated', () => {
     const email = chance.email();
     chanceStub.email.withArgs(options).returns(email);
 
     assert.equal(any.email(options), email);
+  });
+
+  test('that primitives are not passed as options', () => {
+    any.email(primitive);
+
+    assert.calledWith(chanceStub.email, undefined);
   });
 
   test('that a date string is generated', () => {
