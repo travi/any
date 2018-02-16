@@ -76,7 +76,7 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.2",
-    "rollup": "0.56.0",
+    "rollup": "0.56.1",
     "rollup-plugin-babel": "3.0.3",
     "semantic-release": "12.4.1",
     "sinon": "4.3.0"
