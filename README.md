@@ -10,6 +10,7 @@
 [![Coverage Status](http://img.shields.io/coveralls/travi/any.svg?style=flat)](https://coveralls.io/r/travi/any?branch=master)
 
 <!-- contribution badges -->
+[![PRs Welcome][prs-badge]][prs]
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat)](http://commitizen.github.io/cz-cli/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat)](https://github.com/semantic-release/semantic-release)
@@ -49,3 +50,6 @@ $ npm install @travi/any --save-dev
 
 * [API](docs/API.md)
 * [Debugging](docs/DEBUG.md)
+
+[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[prs]: http://makeapullrequest.com
