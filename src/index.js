@@ -1,7 +1,6 @@
-import {boolean, date, email, float, integer, paragraph, sentence, string, subset, url, word} from './base';
+import {boolean, date, email, float, fromList, integer, paragraph, sentence, string, subset, url, word} from './base';
 import listOf from './list-of';
 import simpleObject from './simple-object';
-import fromList from './from-list';
 import objectWithKeys from './object-with-keys';
 
 export default {
