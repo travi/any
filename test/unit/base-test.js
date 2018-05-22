@@ -177,4 +177,13 @@ suite('base generators', () => {
 
     assert.equal(any.subset(originalList, {size: quantity}), list);
   });
+
+  test('that a list item is picked', () => {
+    const picked = chance.word();
+    const list = randomListOfStrings();
+
+    chanceStub.pickone.withArgs(list).returns(picked);
+
+    assert.equal(any.fromList(list), picked);
+  });
 });

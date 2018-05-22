@@ -119,7 +119,7 @@ any.objectWithKeys(['foo', 'bar', 'baz'], {factory: (id, index) => ({id, letter:
 
 ## `fromList`
 
-Returns one item at random from the provided list.
+Direct usage of [`pickone()` from chance.js](http://chancejs.com/helpers/pickone.html).
 
 ### `fromList` parameters
 
@@ -171,7 +171,7 @@ any.listOf(() => ({ id: any.integer(), foo: any.string() }), {uniqueOn: 'id'});
 
 ## `string`
 
-Direct usage of [`string()` from chance.js](http://chancejs.com/#string).
+Direct usage of [`string()` from chance.js](http://chancejs.com/basics/string.html).
 Options are passed directly to the chance method so refer to its documentation
 for what is available.
 
@@ -191,7 +191,7 @@ any.string();
 
 ## `word`
 
-Direct usage of [`word()` from chance.js](http://chancejs.com/#word).
+Direct usage of [`word()` from chance.js](http://chancejs.com/text/word.html).
 Options are passed directly to the chance method so refer to its documentation
 for what is available.
 
@@ -205,7 +205,7 @@ any.word();
 
 ## `sentence`
 
-Direct usage of [`sentence()` from chance.js](http://chancejs.com/#sentence).
+Direct usage of [`sentence()` from chance.js](http://chancejs.com/text/sentence.html).
 Options are passed directly to the chance method so refer to its documentation
 for what is available.
 
@@ -219,7 +219,7 @@ any.sentence();
 
 ## `paragraph`
 
-Direct usage of [`paragraph()` from chance.js](http://chancejs.com/#paragraph).
+Direct usage of [`paragraph()` from chance.js](http://chancejs.com/text/paragraph.html).
 Options are passed directly to the chance method so refer to its documentation
 for what is available.
 
@@ -237,9 +237,9 @@ any.paragraph();
 ## `integer`
 
 Produces a random integer > 0. Direct usage of
-[`natural()` from chance.js](http://chancejs.com/#natural). Options are passed
-directly to the chance method so refer to its documentation for what is
-available.
+[`natural()` from chance.js](http://chancejs.com/basics/natural.html).
+Options are passed directly to the chance method so refer to its
+documentation for what is available.
 
 ### `integer` example
 
@@ -251,7 +251,7 @@ any.integer();
 
 ## `float`
 
-Direct usage of [`floating()` from chance.js](http://chancejs.com/#floating).
+Direct usage of [`floating()` from chance.js](http://chancejs.com/basics/floating.html).
 Options are passed directly to the chance method so refer to its documentation
 for what is available.
 
@@ -279,9 +279,9 @@ any.boolean();
 
 ## `url`
 
-Direct usage of [`url()` from chance.js](http://chancejs.com/#url). Options are
-passed directly to the chance method so refer to its documentation for what is
-available.
+Direct usage of [`url()` from chance.js](http://chancejs.com/web/url.html).
+Options are passed directly to the chance method so refer to its
+documentation for what is available.
 
 ### `url` example
 
@@ -293,7 +293,7 @@ any.url();
 
 ## `email`
 
-Direct usage of [`email()` from chance.js](http://chancejs.com/#email).
+Direct usage of [`email()` from chance.js](http://chancejs.com/web/email.html).
 Options are passed directly to the chance method so refer to its documentation
 for what is available.
 
@@ -307,7 +307,7 @@ any.email();
 
 ## `date`
 
-An almost direct usage of [`date()` from chance.js](http://chancejs.com/#date).
+An almost direct usage of [`date()` from chance.js](http://chancejs.com/time/date.html).
 No options passed to the `any` method are passed to the `chance` method, but
 the `{string: true}` option is passed because I have only had a use for the
 string form of random dates so far.
@@ -322,7 +322,7 @@ any.date();
 
 ## `subset`
 
-An almost direct usage of [`pickset()` from chance.js](http://chancejs.com/#pickset).
+An almost direct usage of [`pickset()` from chance.js](http://chancejs.com/helpers/pickset.html).
 The `size` option is passed directly to the chance method's `quantity` argument so
 refer to its documentation for what is available.
 
