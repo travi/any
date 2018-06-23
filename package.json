@@ -82,7 +82,7 @@
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.2",
     "rollup": "0.59.4",
-    "rollup-plugin-babel": "3.0.4",
+    "rollup-plugin-babel": "3.0.5",
     "semantic-release": "15.1.8",
     "sinon": "4.5.0"
   },
