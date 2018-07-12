@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/v/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
 [![monthly downloads](https://img.shields.io/npm/dm/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
 [![license](https://img.shields.io/github/license/travi/any.svg?style=flat)](LICENSE)
+[![Try @travi/any on RunKit](https://badge.runkitcdn.com/@travi/any.svg)](https://npm.runkit.com/@travi/any)
 
 <!-- status badges -->
 [![Build Status](https://img.shields.io/travis/travi/any.svg?style=flat)](https://travis-ci.org/travi/any)
