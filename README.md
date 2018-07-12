@@ -4,13 +4,6 @@
 [![Build Status](https://img.shields.io/travis/travi/any.svg)](https://travis-ci.org/travi/any)
 [![Coverage Status](http://img.shields.io/coveralls/travi/any.svg)](https://coveralls.io/r/travi/any?branch=master)
 
-<!-- contribution badges -->
-[![PRs Welcome][prs-badge]][prs]
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Greenkeeper badge](https://badges.greenkeeper.io/travi/any.svg)](https://greenkeeper.io/)
-
 Random data generator for when test data is insignificant. Tailoring data too
 closely for the domain can end up being confusing in tests because it distracts
 from the behavior that is actually important in the test. This is why I prefer
@@ -53,6 +46,28 @@ $ npm install @travi/any --save-dev
 
 * [API](docs/API.md)
 * [Debugging](docs/DEBUG.md)
+
+## Contributing
+
+<!-- contribution badges -->
+[![PRs Welcome][prs-badge]][prs]
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Greenkeeper badge](https://badges.greenkeeper.io/travi/any.svg)](https://greenkeeper.io/)
+
+### Dependencies
+
+```sh
+$ nvm install
+$ npm install
+```
+
+### Verification
+
+```sh
+$ npm test
+```
 
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [prs]: http://makeapullrequest.com
