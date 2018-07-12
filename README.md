@@ -1,20 +1,14 @@
 # Random data generator
 
-<!-- consumer badges -->
-[![npm](https://img.shields.io/npm/v/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
-[![monthly downloads](https://img.shields.io/npm/dm/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
-[![license](https://img.shields.io/github/license/travi/any.svg?style=flat)](LICENSE)
-[![Try @travi/any on RunKit](https://badge.runkitcdn.com/@travi/any.svg)](https://npm.runkit.com/@travi/any)
-
 <!-- status badges -->
-[![Build Status](https://img.shields.io/travis/travi/any.svg?style=flat)](https://travis-ci.org/travi/any)
-[![Coverage Status](http://img.shields.io/coveralls/travi/any.svg?style=flat)](https://coveralls.io/r/travi/any?branch=master)
+[![Build Status](https://img.shields.io/travis/travi/any.svg)](https://travis-ci.org/travi/any)
+[![Coverage Status](http://img.shields.io/coveralls/travi/any.svg)](https://coveralls.io/r/travi/any?branch=master)
 
 <!-- contribution badges -->
 [![PRs Welcome][prs-badge]][prs]
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat)](https://conventionalcommits.org)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat)](http://commitizen.github.io/cz-cli/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat)](https://github.com/semantic-release/semantic-release)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Greenkeeper badge](https://badges.greenkeeper.io/travi/any.svg)](https://greenkeeper.io/)
 
 Random data generator for when test data is insignificant. Tailoring data too
@@ -41,16 +35,24 @@ just use Chance.js directly?
 * Many of my tests need [lists](docs/API.md#listof) generated. Like objects,
   Chance.js does not generate lists, so I've included this on my own.
 
-## Install
+## Usage
 
-```bash
+<!-- consumer badges -->
+[![npm](https://img.shields.io/npm/v/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
+[![monthly downloads](https://img.shields.io/npm/dm/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
+[![license](https://img.shields.io/github/license/travi/any.svg?style=flat)](LICENSE)
+[![Try @travi/any on RunKit](https://badge.runkitcdn.com/@travi/any.svg)](https://npm.runkit.com/@travi/any)
+
+### Install
+
+```sh
 $ npm install @travi/any --save-dev
 ```
 
-## Documentation
+### Documentation
 
 * [API](docs/API.md)
 * [Debugging](docs/DEBUG.md)
 
-[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [prs]: http://makeapullrequest.com
