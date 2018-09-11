@@ -10,7 +10,7 @@ suite('base generators', () => {
   const primitive = chance.natural();
 
   setup(() => {
-    sandbox = sinon.sandbox.create();
+    sandbox = sinon.createSandbox();
     chanceStub = sandbox.stub(new Chance());
     any = proxyquire('../../src/base', {
       chance: sinon.stub().returns(chanceStub)

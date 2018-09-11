@@ -12,7 +12,7 @@ suite('list of', () => {
   setup(() => {
     listSize = chance.natural(INTEGER_RANGE);
 
-    sandbox = sinon.sandbox.create();
+    sandbox = sinon.createSandbox();
 
     sandbox.stub(baseGenerators, 'integer');
     baseGenerators.integer.withArgs({min: 1, max: 20}).returns(listSize);

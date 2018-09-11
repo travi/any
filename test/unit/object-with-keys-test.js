@@ -8,7 +8,7 @@ suite('object with keys', () => {
   let sandbox;
 
   setup(() => {
-    sandbox = sinon.sandbox.create();
+    sandbox = sinon.createSandbox();
 
     sandbox.stub(baseGenerators, 'string');
   });

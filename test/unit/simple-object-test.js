@@ -8,7 +8,7 @@ suite('simple object', () => {
   let sandbox;
 
   setup(() => {
-    sandbox = sinon.sandbox.create();
+    sandbox = sinon.createSandbox();
 
     sandbox.stub(baseGenerators, 'integer');
     sandbox.stub(baseGenerators, 'string');
