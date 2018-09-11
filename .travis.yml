@@ -4,10 +4,11 @@ notifications:
 before_script:
 - npm run greenkeeper:update-lockfile
 - npm ls --production >/dev/null
-script:
-- npm test
-- npm run semantic-release
 after_script: npm run greenkeeper:upload-lockfile
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: npx semantic-release
 after_success:
   - npm run report-coverage
 branches:
