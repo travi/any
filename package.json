@@ -15,7 +15,7 @@
     "coverage": "nyc run-s tests:unit",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls",
     "preversion": "npm test",
-    "prepublish": "npm run build",
+    "prepack": "npm run build",
     "precommit": "npm test",
     "commitmsg": "commitlint -e",
     "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
