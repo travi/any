@@ -80,7 +80,7 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.2",
-    "rollup": "0.65.2",
+    "rollup": "0.66.0",
     "rollup-plugin-babel": "3.0.7",
     "sinon": "6.2.0"
   },
