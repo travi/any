@@ -17,9 +17,7 @@
     "preversion": "npm test",
     "prepack": "npm run build",
     "precommit": "npm test",
-    "commitmsg": "commitlint -e",
-    "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
-    "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload"
+    "commitmsg": "commitlint -e"
   },
   "repository": {
     "type": "git",
@@ -69,7 +67,6 @@
     "cz-conventional-changelog": "2.1.0",
     "formatio": "1.2.0",
     "globstar": "1.0.0",
-    "greenkeeper-lockfile": "2.7.0",
     "husky": "1.1.3",
     "markdown-toc": "1.2.0",
     "markdownlint-cli": "0.13.0",
