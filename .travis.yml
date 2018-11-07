@@ -15,4 +15,3 @@ env:
   global:
   - FORCE_COLOR=1
   - NPM_CONFIG_COLOR=always
-  - GK_LOCK_COMMIT_AMEND=true
