@@ -54,13 +54,10 @@
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-exponentiation-operator": "7.1.0",
+    "@babel/register": "7.0.0",
+    "@travi/babel-preset": "2.0.0",
     "@travi/eslint-config-travi": "1.6.19",
-    "babel-cli": "6.26.0",
-    "babel-plugin-transform-exponentiation-operator": "6.24.1",
-    "babel-preset-es2015-node": "6.1.1",
-    "babel-preset-es2015-rollup": "3.0.0",
-    "babel-preset-stage-3": "6.24.1",
-    "babel-register": "6.26.0",
     "chai": "4.2.0",
     "commitlint-config-travi": "1.2.31",
     "coveralls": "3.0.2",
@@ -78,6 +75,7 @@
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.2",
     "rollup": "0.67.1",
+    "rollup-plugin-auto-external": "2.0.0",
     "rollup-plugin-babel": "4.0.3",
     "sinon": "7.1.1"
   },
