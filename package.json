@@ -74,7 +74,7 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "rimraf": "2.6.2",
-    "rollup": "0.67.1",
+    "rollup": "0.67.2",
     "rollup-plugin-auto-external": "2.0.0",
     "rollup-plugin-babel": "4.0.3",
     "sinon": "7.1.1"
