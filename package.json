@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/travi/any#readme",
   "dependencies": {
-    "chance": "1.0.17",
+    "chance": "1.0.18",
     "debug": "4.1.1",
     "lodash": "4.17.11",
     "mersenne-twister": "1.1.0"
