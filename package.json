@@ -57,7 +57,7 @@
     "@babel/plugin-transform-exponentiation-operator": "7.2.0",
     "@babel/register": "7.0.0",
     "@travi/babel-preset": "2.0.0",
-    "@travi/eslint-config-travi": "1.7.0",
+    "@travi/eslint-config-travi": "1.8.0",
     "chai": "4.2.0",
     "commitlint-config-travi": "1.2.35",
     "coveralls": "3.0.2",
