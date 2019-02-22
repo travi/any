@@ -60,7 +60,7 @@
     "@travi/eslint-config-travi": "1.8.0",
     "chai": "4.2.0",
     "commitlint-config-travi": "1.2.40",
-    "coveralls": "3.0.2",
+    "coveralls": "3.0.3",
     "cz-conventional-changelog": "2.1.0",
     "formatio": "1.2.0",
     "globstar": "1.0.0",
