@@ -236,7 +236,7 @@ any.paragraph();
 
 ## `integer`
 
-Produces a random integer > 0. Direct usage of
+Produces a random integer >= 0. Direct usage of
 [`natural()` from chance.js](http://chancejs.com/basics/natural.html).
 Options are passed directly to the chance method so refer to its
 documentation for what is available.
