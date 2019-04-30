@@ -25,6 +25,7 @@ export const email = options => chance.email(!isPrimitive(options) ? options : u
 export const date = () => chance.date({string: true});
 export const subset = (list, {size = 2} = {}) => chance.pickset(list, size);
 export const fromList = list => chance.pickone(list);
+export const subList = (list, {size}) => chance.pickset(list, size);
 
 export function word(options = {}) {
   return options.length ? chance.word(options) : chance.word({

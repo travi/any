@@ -186,4 +186,14 @@ suite('base generators', () => {
 
     assert.equal(any.fromList(list), picked);
   });
+
+  test('that multiple unique items are chosen from a list', () => {
+    const picked = randomListOfStrings();
+    const list = randomListOfStrings();
+    const quantity = chance.integer();
+
+    chanceStub.pickset.withArgs(list, quantity).returns(picked);
+
+    assert.equal(any.subList(list, {size: quantity}), picked);
+  });
 });
