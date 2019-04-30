@@ -1,18 +1,4 @@
-import {
-  boolean,
-  date,
-  email,
-  float,
-  fromList,
-  subList,
-  integer,
-  paragraph,
-  sentence,
-  string,
-  subset,
-  url,
-  word
-} from './base';
+import {boolean, date, email, float, fromList, subList, integer, paragraph, sentence, string, url, word} from './base';
 import listOf from './list-of';
 import simpleObject from './simple-object';
 import objectWithKeys from './object-with-keys';
@@ -32,6 +18,5 @@ export default {
   objectWithKeys,
   listOf,
   fromList,
-  subList,
-  subset
+  subList
 };

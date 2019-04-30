@@ -23,7 +23,6 @@ export const url = options => chance.url(!isPrimitive(options) ? options : undef
 export const boolean = options => chance.bool(!isPrimitive(options) ? options : undefined);
 export const email = options => chance.email(!isPrimitive(options) ? options : undefined);
 export const date = () => chance.date({string: true});
-export const subset = (list, {size = 2} = {}) => chance.pickset(list, size);
 export const fromList = list => chance.pickone(list);
 export const subList = (list, {size}) => chance.pickset(list, size);
 
