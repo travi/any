@@ -1,20 +1,22 @@
 # API Reference
 
-* [`simpleObject`](#simpleobject)
-* [`objectWithKeys`](#objectwithkeys)
-* [`fromList`](#fromlist)
-* [`listOf`](#listof)
-* [`string`](#string)
-* [`word`](#word)
-* [`sentence`](#sentence)
-* [`paragraph`](#paragraph)
-* [`integer`](#integer)
-* [`float`](#float)
-* [`boolean`](#boolean)
-* [`url`](#url)
-* [`email`](#email)
-* [`date`](#date)
-* [`subset`](#subset)
+## Table of Contents
+
+* [simpleObject](#simpleobject)
+* [objectWithKeys](#objectwithkeys)
+* [fromList](#fromlist)
+* [listOf](#listof)
+* [string](#string)
+* [word](#word)
+* [sentence](#sentence)
+* [paragraph](#paragraph)
+* [integer](#integer)
+* [float](#float)
+* [boolean](#boolean)
+* [url](#url)
+* [email](#email)
+* [date](#date)
+* [subset](#subset)
 
 ## `simpleObject`
 
@@ -139,13 +141,14 @@ Produces a list of random items from the provided factory function
 
 ### `listOf` parameters
 
-* `factory` (required): the factory function for producing the items for the list.
+* `factory` (required): the factory function for producing the items for the
+  list.
   * receives the current index as the first argument
 * `options`: object to provide configuration options
   * `size`: length of list that should be produced
     * defaults to a random number between `1` and `20`, if not provided
-    * the default range of potential sizes can be overridden by providing options
-      for [integer](#integer)
+    * the default range of potential sizes can be overridden by providing
+      options for [integer](#integer)
   * `uniqueOn`: property on the produced objects that needs to be unique within
     the resulting list
 
@@ -323,8 +326,8 @@ any.date();
 ## `subset`
 
 An almost direct usage of [`pickset()` from chance.js](http://chancejs.com/helpers/pickset.html).
-The `size` option is passed directly to the chance method's `quantity` argument so
-refer to its documentation for what is available.
+The `size` option is passed directly to the chance method's `quantity` argument
+so refer to its documentation for what is available.
 
 ### `subset` parameters
 

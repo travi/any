@@ -1,6 +1,7 @@
 # Random data generator
 
 <!-- status badges -->
+
 [![Build Status](https://img.shields.io/travis/travi/any.svg)](https://travis-ci.org/travi/any)
 [![Coverage Status](http://img.shields.io/coveralls/travi/any.svg)](https://coveralls.io/r/travi/any?branch=master)
 
@@ -31,6 +32,7 @@ just use Chance.js directly?
 ## Usage
 
 <!-- consumer badges -->
+
 [![npm](https://img.shields.io/npm/v/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
 [![monthly downloads](https://img.shields.io/npm/dm/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
 [![license](https://img.shields.io/github/license/travi/any.svg?style=flat)](LICENSE)
@@ -50,6 +52,7 @@ $ npm install @travi/any --save-dev
 ## Contributing
 
 <!-- contribution badges -->
+
 [![PRs Welcome][prs-badge]][prs]
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
@@ -70,4 +73,5 @@ $ npm test
 ```
 
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
+
 [prs]: http://makeapullrequest.com
