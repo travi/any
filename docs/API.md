@@ -5,6 +5,7 @@
 * [simpleObject](#simpleobject)
 * [objectWithKeys](#objectwithkeys)
 * [fromList](#fromlist)
+* [subList](#sublist)
 * [listOf](#listof)
 * [string](#string)
 * [word](#word)
@@ -133,6 +134,25 @@ Direct usage of [`pickone()` from chance.js](http://chancejs.com/helpers/pickone
 any.fromList(['foo', 'bar', 'baz']);
 
 // bar
+```
+
+## `subList`
+
+An almost direct usage of [`pickset()` from chance.js](http://chancejs.com/helpers/pickset.html).
+
+### `subList` parameters
+
+* `list` (required): list of items to choose from
+* `options`: (required) object to provide configuration options
+  * `size`: (required) length of sub-list that should be produced by choosing
+    unique items from the provided list
+
+### `subList` example
+
+```js
+any.subList(['foo', 'bar', 'baz'], {size: 2});
+
+// ['bar', 'foo']
 ```
 
 ## `listOf`
