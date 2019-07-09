@@ -50,7 +50,7 @@
   "dependencies": {
     "chance": "1.0.18",
     "debug": "4.1.1",
-    "lodash": "4.17.12",
+    "lodash": "4.17.13",
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
