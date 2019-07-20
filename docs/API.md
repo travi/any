@@ -17,7 +17,6 @@
 * [url](#url)
 * [email](#email)
 * [date](#date)
-* [subset](#subset)
 
 ## `simpleObject`
 
