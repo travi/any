@@ -26,7 +26,7 @@ suite('base generators', () => {
     assert.equal(any.integer(options), int);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the integer generator', () => {
     any.integer(primitive);
 
     assert.calledWith(chanceStub.natural, undefined);
@@ -39,7 +39,7 @@ suite('base generators', () => {
     assert.equal(any.float(options), float);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the float generator', () => {
     any.float(primitive);
 
     assert.calledWith(chanceStub.floating, undefined);
@@ -52,7 +52,7 @@ suite('base generators', () => {
     assert.equal(any.string(options), string);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the string generator', () => {
     any.string(primitive);
 
     assert.calledWith(chanceStub.string, undefined);
@@ -65,7 +65,7 @@ suite('base generators', () => {
     assert.equal(any.url(options), url);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the url generator', () => {
     any.url(primitive);
 
     assert.calledWith(chanceStub.url, undefined);
@@ -86,7 +86,7 @@ suite('base generators', () => {
     assert.equal(any.word({syllables: expectedSyllables, ...options}), word);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the word generator', () => {
     any.word(primitive);
 
     assert.calledWith(chanceStub.word, {syllables: 3});
@@ -107,7 +107,7 @@ suite('base generators', () => {
     assert.equal(any.sentence(options), sentence);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the sentence generator', () => {
     any.sentence(primitive);
 
     assert.calledWith(chanceStub.sentence, undefined);
@@ -120,7 +120,7 @@ suite('base generators', () => {
     assert.equal(any.paragraph(options), paragraph);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the paragraph generator', () => {
     any.paragraph(primitive);
 
     assert.calledWith(chanceStub.paragraph, undefined);
@@ -133,7 +133,7 @@ suite('base generators', () => {
     assert.equal(any.boolean(options), boolean);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the boolean generator', () => {
     any.boolean(primitive);
 
     assert.calledWith(chanceStub.bool, undefined);
@@ -146,7 +146,7 @@ suite('base generators', () => {
     assert.equal(any.email(options), email);
   });
 
-  test('that primitives are not passed as options', () => {
+  test('that primitives are not passed as options to the email generator', () => {
     any.email(primitive);
 
     assert.calledWith(chanceStub.email, undefined);
