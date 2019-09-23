@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-exponentiation-operator": "7.2.0",
-    "@babel/register": "7.6.0",
+    "@babel/register": "7.6.2",
     "@travi/babel-preset": "3.0.0",
     "@travi/eslint-config-travi": "1.8.5",
     "chai": "4.2.0",
