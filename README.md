@@ -2,7 +2,7 @@
 
 <!-- status badges -->
 
-[![Build Status](https://img.shields.io/travis/travi/any.svg)](https://travis-ci.org/travi/any)
+[![Build Status](https://img.shields.io/travis/com/travi/any.svg)](https://travis-ci.com/travi/any)
 [![Coverage Status](http://img.shields.io/coveralls/travi/any.svg)](https://coveralls.io/r/travi/any?branch=master)
 
 Random data generator for when test data is insignificant. Tailoring data too
