@@ -1,4 +1,3 @@
-extends: '@travi/travi/rules/es6'
-
-rules:
-  func-style: off
+extends:
+  - '@travi'
+  - '@travi/mocha'
