@@ -9,6 +9,7 @@
     "build": "rollup -c",
     "lint:js": "eslint .",
     "lint:md": "remark . --frail",
+    "lint:peer": "npm ls >/dev/null",
     "tests:unit": "mocha --recursive test/unit/",
     "test": "run-s clean lint:* coverage",
     "generate:md": "remark . --output",

@@ -3,11 +3,7 @@ language: node_js
 notifications:
   email: false
 import:
+  - source: form8ion/.travis-ci:node.yml
   - source: travi/.travis-ci:authenticated-semantic-release.yml
-before_script: npm ls >/dev/null
 after_success:
   - npm run report-coverage
-env:
-  global:
-  - FORCE_COLOR=1
-  - NPM_CONFIG_COLOR=always
