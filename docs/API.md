@@ -2,21 +2,21 @@
 
 ## Table of Contents
 
-* [simpleObject](#simpleobject)
-* [objectWithKeys](#objectwithkeys)
-* [fromList](#fromlist)
-* [subList](#sublist)
-* [listOf](#listof)
-* [string](#string)
-* [word](#word)
-* [sentence](#sentence)
-* [paragraph](#paragraph)
-* [integer](#integer)
-* [float](#float)
-* [boolean](#boolean)
-* [url](#url)
-* [email](#email)
-* [date](#date)
+* [`simpleObject`](#simpleobject)
+* [`objectWithKeys`](#objectwithkeys)
+* [`fromList`](#fromlist)
+* [`subList`](#sublist)
+* [`listOf`](#listof)
+* [`string`](#string)
+* [`word`](#word)
+* [`sentence`](#sentence)
+* [`paragraph`](#paragraph)
+* [`integer`](#integer)
+* [`float`](#float)
+* [`boolean`](#boolean)
+* [`url`](#url)
+* [`email`](#email)
+* [`date`](#date)
 
 ## `simpleObject`
 
