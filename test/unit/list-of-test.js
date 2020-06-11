@@ -36,7 +36,6 @@ suite('list of', () => {
     assert.equal(list.length, size);
   });
 
-
   test('that the minimum range limit can be set through the options', () => {
     const min = chance.natural(INTEGER_RANGE);
     baseGenerators.integer.withArgs({min, max: 20}).returns(listSize);
