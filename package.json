@@ -16,9 +16,7 @@
     "coverage": "nyc run-s tests:unit",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls",
     "preversion": "npm test",
-    "prepack": "npm run build",
-    "precommit": "npm test",
-    "commitmsg": "commitlint -e"
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
