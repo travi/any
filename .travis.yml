@@ -1,9 +1,0 @@
-version: ~> 1.0
-language: node_js
-notifications:
-  email: false
-import:
-  - source: form8ion/.travis-ci:node.yml
-  - source: travi/.travis-ci:authenticated-semantic-release.yml
-after_success:
-  - npm run report-coverage
