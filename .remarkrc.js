@@ -7,4 +7,4 @@ exports.settings = {
   incrementListMarker: false
 };
 
-exports.plugins = ['remark-preset-lint-travi', [require('remark-toc'), {tight: true, maxDepth: 2}]];
+exports.plugins = ['remark-preset-lint-travi', ['remark-toc', {tight: true, maxDepth: 2}]];
