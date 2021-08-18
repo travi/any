@@ -16,7 +16,8 @@
     "coverage": "nyc run-s tests:unit",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls",
     "preversion": "npm test",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
