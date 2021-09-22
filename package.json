@@ -79,7 +79,7 @@
     "remark-preset-lint-travi": "2.0.4",
     "remark-toc": "8.0.0",
     "rimraf": "3.0.2",
-    "rollup": "2.56.3",
+    "rollup": "2.57.0",
     "rollup-plugin-auto-external": "2.0.0",
     "rollup-plugin-babel": "4.4.0",
     "sinon": "11.1.2"
