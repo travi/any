@@ -61,7 +61,7 @@
     "@babel/register": "7.16.0",
     "@travi/babel-preset": "3.0.69",
     "@travi/eslint-config": "1.0.90",
-    "@travi/eslint-config-mocha": "1.0.12",
+    "@travi/eslint-config-mocha": "1.0.14",
     "chai": "4.3.4",
     "commitlint-config-travi": "1.4.3",
     "coveralls": "3.1.1",
