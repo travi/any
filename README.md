@@ -78,6 +78,14 @@ $ npm install
 $ npm test
 ```
 
+### Typescript Types
+
+When making changes to the API, these changes must be reflected in the types
+file (`index.d.ts`). This library uses `tsd` to test the types. These tests
+can be found at `index.d-test.ts`. As you make changes to the API, first update
+`index.d-test.ts` with the expected results, then update `index.d.ts` with
+the appropriate types to satisfy the tests.
+
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 
 [prs]: http://makeapullrequest.com
