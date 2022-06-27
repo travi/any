@@ -14,7 +14,7 @@ export default {
     })
   ],
   output: [
-    {file: 'lib/any.cjs.js', format: 'cjs', sourcemap: true},
-    {file: 'lib/any.es.js', format: 'es', sourcemap: true}
+    {file: 'lib/any.js', format: 'cjs', sourcemap: true},
+    {file: 'lib/any.mjs', format: 'es', sourcemap: true}
   ]
 };

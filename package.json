@@ -2,13 +2,13 @@
   "name": "@travi/any",
   "version": "0.0.0-semantically-released",
   "description": "random data generator for when test data is insignificant",
-  "main": "lib/any.cjs.js",
-  "module": "lib/any.es.js",
+  "main": "lib/any.js",
+  "module": "lib/any.mjs",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./lib/any.es.js",
-    "require": "./lib/any.cjs.js"
+    "import": "./lib/any.js",
+    "require": "./lib/any.mjs"
   },
   "scripts": {
     "clean": "rimraf coverage/ lib/",
