@@ -7,8 +7,8 @@
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./lib/any.js",
-    "require": "./lib/any.mjs"
+    "import": "./lib/any.mjs",
+    "require": "./lib/any.js"
   },
   "scripts": {
     "clean": "rimraf coverage/ lib/",
