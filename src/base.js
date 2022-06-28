@@ -1,7 +1,8 @@
 import Chance from 'chance';
 import MersenneTwister from 'mersenne-twister';
+import debugLibrary from 'debug';
 
-const debug = require('debug')('any');
+const debug = debugLibrary('any');
 
 const generator = new MersenneTwister();
 // Multiply the random seed to match chance.js
