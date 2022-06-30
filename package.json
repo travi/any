@@ -89,7 +89,7 @@
     "referee": "1.2.0",
     "referee-sinon": "1.0.3",
     "remark-cli": "11.0.0",
-    "remark-preset-lint-travi": "4.0.0",
+    "remark-preset-lint-travi": "4.0.1",
     "remark-toc": "8.0.1",
     "rimraf": "3.0.2",
     "rollup": "2.75.7",
