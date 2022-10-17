@@ -1,5 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import autoExternal from 'rollup-plugin-auto-external';
 
 export default {
