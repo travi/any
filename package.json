@@ -76,7 +76,7 @@
     "@travi/babel-preset": "3.0.96",
     "@travi/eslint-config": "3.0.12",
     "@travi/eslint-config-mocha": "1.0.19",
-    "chai": "4.3.6",
+    "chai": "4.3.7",
     "commitlint-config-travi": "1.4.19",
     "coveralls": "3.1.1",
     "cz-conventional-changelog": "3.3.0",
