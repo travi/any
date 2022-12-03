@@ -74,7 +74,7 @@
     "@babel/register": "7.18.9",
     "@rollup/plugin-babel": "6.0.3",
     "@travi/babel-preset": "3.0.96",
-    "@travi/eslint-config": "3.0.13",
+    "@travi/eslint-config": "3.0.14",
     "@travi/eslint-config-mocha": "1.0.19",
     "chai": "4.3.7",
     "commitlint-config-travi": "1.4.20",
