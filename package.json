@@ -77,7 +77,7 @@
     "@travi/eslint-config": "3.0.23",
     "@travi/eslint-config-mocha": "1.0.19",
     "chai": "4.3.7",
-    "commitlint-config-travi": "1.4.24",
+    "commitlint-config-travi": "1.4.25",
     "coveralls": "3.1.1",
     "cz-conventional-changelog": "3.3.0",
     "formatio": "1.2.0",
