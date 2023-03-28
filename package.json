@@ -103,6 +103,6 @@
     "rollup": "3.20.2",
     "rollup-plugin-auto-external": "2.0.0",
     "sinon": "15.0.3",
-    "tsd": "0.28.0"
+    "tsd": "0.28.1"
   }
 }
