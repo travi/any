@@ -16,7 +16,7 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
+      - uses: actions/checkout@47fbe2df0ad0e27efb67a70beac3555f192b062f
       - name: Setup node
         uses: actions/setup-node@d98fa1113850e562f83c7fc3a89c0ecd7a87fbed
         with:
