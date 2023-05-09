@@ -100,7 +100,7 @@
     "remark-preset-lint-travi": "5.0.1",
     "remark-toc": "8.0.1",
     "rimraf": "5.0.0",
-    "rollup": "3.21.5",
+    "rollup": "3.21.6",
     "rollup-plugin-auto-external": "2.0.0",
     "sinon": "15.0.4",
     "tsd": "0.28.1"
