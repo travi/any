@@ -79,7 +79,7 @@
     "@babel/plugin-transform-exponentiation-operator": "7.18.6",
     "@babel/register": "7.21.0",
     "@rollup/plugin-babel": "6.0.3",
-    "@travi/babel-preset": "3.0.99",
+    "@travi/babel-preset": "3.0.100",
     "@travi/eslint-config": "3.0.30",
     "@travi/eslint-config-mocha": "1.0.19",
     "c8": "7.14.0",
