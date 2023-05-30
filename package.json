@@ -84,7 +84,7 @@
     "@travi/eslint-config-mocha": "1.0.19",
     "c8": "7.14.0",
     "chai": "4.3.7",
-    "commitlint-config-travi": "1.4.30",
+    "commitlint-config-travi": "1.4.31",
     "coveralls": "3.1.1",
     "cross-env": "7.0.3",
     "cz-conventional-changelog": "3.3.0",
