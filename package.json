@@ -82,7 +82,7 @@
     "@travi/babel-preset": "3.0.101",
     "@travi/eslint-config": "3.0.31",
     "@travi/eslint-config-mocha": "1.0.19",
-    "c8": "7.14.0",
+    "c8": "8.0.0",
     "chai": "4.3.7",
     "commitlint-config-travi": "1.4.31",
     "coveralls": "3.1.1",
