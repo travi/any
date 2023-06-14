@@ -102,7 +102,7 @@
     "rimraf": "5.0.1",
     "rollup": "3.24.0",
     "rollup-plugin-auto-external": "2.0.0",
-    "sinon": "15.1.0",
+    "sinon": "15.1.2",
     "tsd": "0.28.1"
   }
 }
