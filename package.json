@@ -63,6 +63,10 @@
     "prepack": "npm run build",
     "prepare": "husky install"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
