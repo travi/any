@@ -2,8 +2,8 @@
 
 <!--status-badges start -->
 
-[![Coverage Status](http://img.shields.io/coveralls/travi/any.svg)](https://coveralls.io/r/travi/any?branch=master)
 [![Node CI Workflow Status][github-actions-ci-badge]][github-actions-ci-link]
+[![Codecov][coverage-badge]][coverage-link]
 
 <!--status-badges end -->
 
@@ -97,3 +97,7 @@ the appropriate types to satisfy the tests.
 [github-actions-ci-link]: https://github.com/travi/any/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
 [github-actions-ci-badge]: https://github.com/travi/any/workflows/Node.js%20CI/badge.svg
+
+[coverage-link]: https://codecov.io/github/travi/any
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/travi/any?logo=codecov
