@@ -61,8 +61,8 @@ $ npm install @travi/any --save-dev
 [![PRs Welcome][prs-badge]][prs]
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Renovate][renovate-badge]][renovate-link]
+[![semantic-release: angular][semantic-release-badge]][semantic-release-link]
 
 <!--contribution-badges end -->
 
@@ -104,3 +104,7 @@ the appropriate types to satisfy the tests.
 [coverage-badge]: https://img.shields.io/codecov/c/github/travi/any?logo=codecov
 
 [slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
+
+[semantic-release-link]: https://github.com/semantic-release/semantic-release
+
+[semantic-release-badge]: https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release
