@@ -98,7 +98,7 @@
     "globstar": "1.0.0",
     "husky": "8.0.3",
     "mocha": "10.2.0",
-    "npm-run-all": "4.1.5",
+    "npm-run-all2": "5.0.0",
     "proxyquire": "2.1.3",
     "publint": "0.1.16",
     "referee": "1.2.0",
