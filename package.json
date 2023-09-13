@@ -39,16 +39,21 @@
     "chance"
   ],
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./lib/any.mjs",
-    "require": "./lib/any.js"
+    "import": {
+      "types": "./index.d.mts",
+      "default": "./lib/any.mjs"
+    },
+    "require": {
+      "types": "./index.d.ts",
+      "default": "./lib/any.js"
+    }
   },
   "main": "lib/any.js",
   "module": "lib/any.mjs",
   "types": "./index.d.ts",
   "scripts": {
     "clean": "rimraf coverage/ lib/",
-    "build": "rollup -c",
+    "build": "rollup -c && cp ./index.d.ts ./index.d.mts",
     "lint:js": "eslint .",
     "lint:md": "remark . --frail",
     "lint:peer": "npm ls >/dev/null",
