@@ -2,4 +2,6 @@ node_modules/
 coverage/
 dist/
 lib/
-.nyc_output
+.nyc_output/
+
+/index.d.mts
