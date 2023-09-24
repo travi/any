@@ -99,7 +99,7 @@ the appropriate types to satisfy the tests.
 
 [github-actions-ci-link]: https://github.com/travi/any/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
-[github-actions-ci-badge]: https://github.com/travi/any/workflows/Node.js%20CI/badge.svg
+[github-actions-ci-badge]: https://img.shields.io/github/actions/workflow/status/travi/any/node-ci.yml.svg?branch=master&logo=github
 
 [coverage-link]: https://codecov.io/github/travi/any
 
