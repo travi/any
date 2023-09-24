@@ -13,6 +13,23 @@ env:
   FORCE_COLOR: 1
   NPM_CONFIG_COLOR: always
 jobs:
+  verify-matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - 18.17.0
+          - 20.6.1
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: ${{ matrix.node }}
+      - run: npm clean-install
+      - run: npm audit signatures
+      - run: npm test
   verify:
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +45,7 @@ jobs:
   release:
     needs:
       - verify
+      - verify-matrix
     permissions:
       contents: write
       id-token: write
