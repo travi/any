@@ -70,6 +70,11 @@
     "prepare": "husky install",
     "lint:publish": "publint --strict"
   },
+  "files": [
+    "./lib/",
+    "./index.d.ts",
+    "./index.d.mts"
+  ],
   "publishConfig": {
     "access": "public",
     "provenance": true
