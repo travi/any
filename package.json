@@ -3,10 +3,10 @@
   "description": "random data generator for when test data is insignificant",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
-  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "engines": {
     "node": "^18.17 || >=20.6.1"
   },
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "contributors": [
     {
       "name": "Trevor Richardson",
