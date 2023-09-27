@@ -103,7 +103,7 @@
     "@travi/eslint-config": "4.0.5",
     "@travi/eslint-config-mocha": "1.0.21",
     "c8": "8.0.1",
-    "chai": "4.3.8",
+    "chai": "4.3.9",
     "commitlint-config-travi": "1.4.35",
     "coveralls": "3.1.1",
     "cross-env": "7.0.3",
