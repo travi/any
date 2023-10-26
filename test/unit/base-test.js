@@ -2,7 +2,8 @@ import proxyquire from 'proxyquire';
 import Chance from 'chance';
 import sinon from 'sinon';
 import {assert} from 'chai';
-import {chance, randomListOfStrings} from '../helpers/data-generator';
+
+import {chance, randomListOfStrings} from '../helpers/data-generator.js';
 
 suite('base generators', () => {
   let sandbox, any, chanceStub;

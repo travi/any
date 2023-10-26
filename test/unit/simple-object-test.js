@@ -1,8 +1,9 @@
 import sinon from 'sinon';
 import {assert} from 'chai';
-import {chance, INTEGER_RANGE} from '../helpers/data-generator';
-import * as baseGenerators from '../../src/base';
-import simpleObject from '../../src/simple-object';
+
+import {chance, INTEGER_RANGE} from '../helpers/data-generator.js';
+import * as baseGenerators from '../../src/base.js';
+import simpleObject from '../../src/simple-object.js';
 
 suite('simple object', () => {
   let sandbox;

@@ -1,10 +1,11 @@
 import sinon from 'sinon';
 import {assert} from 'chai';
 import _ from 'lodash';
-import {chance, INTEGER_RANGE, randomListOfStrings} from '../helpers/data-generator';
-import * as baseGenerators from '../../src/base';
-import realAny from '../../src/index';
-import listOf from '../../src/list-of';
+
+import {chance, INTEGER_RANGE, randomListOfStrings} from '../helpers/data-generator.js';
+import * as baseGenerators from '../../src/base.js';
+import realAny from '../../src/index.js';
+import listOf from '../../src/list-of.js';
 
 suite('list of', () => {
   let sandbox, listSize;
