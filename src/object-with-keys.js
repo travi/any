@@ -1,4 +1,4 @@
-import {string} from './base';
+import {string} from './base.js';
 
 export default function (keys, options = {}) {
   return keys

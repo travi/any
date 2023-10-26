@@ -1,8 +1,9 @@
 import sinon from 'sinon';
 import {assert} from 'chai';
-import {chance, randomListOfStrings} from '../helpers/data-generator';
-import * as baseGenerators from '../../src/base';
-import objectWithKeys from '../../src/object-with-keys';
+
+import {chance, randomListOfStrings} from '../helpers/data-generator.js';
+import * as baseGenerators from '../../src/base.js';
+import objectWithKeys from '../../src/object-with-keys.js';
 
 suite('object with keys', () => {
   let sandbox;

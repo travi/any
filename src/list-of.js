@@ -1,5 +1,6 @@
 import _ from 'lodash';
-import {integer, DEFAULT_SIZE_RANGE} from './base';
+
+import {integer, DEFAULT_SIZE_RANGE} from './base.js';
 
 export default function listOf(factory, options = {}) {
   const listSize = options.size || integer({...DEFAULT_SIZE_RANGE, ...options});

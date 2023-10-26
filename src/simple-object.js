@@ -1,4 +1,4 @@
-import {DEFAULT_SIZE_RANGE, integer, string, word} from './base';
+import {DEFAULT_SIZE_RANGE, integer, string, word} from './base.js';
 
 export default function () {
   const object = {};

@@ -1,7 +1,20 @@
-import {boolean, date, email, float, fromList, subList, integer, paragraph, sentence, string, url, word} from './base';
-import listOf from './list-of';
-import simpleObject from './simple-object';
-import objectWithKeys from './object-with-keys';
+import {
+  boolean,
+  date,
+  email,
+  float,
+  fromList,
+  subList,
+  integer,
+  paragraph,
+  sentence,
+  string,
+  url,
+  word
+} from './base.js';
+import listOf from './list-of.js';
+import simpleObject from './simple-object.js';
+import objectWithKeys from './object-with-keys.js';
 
 export default {
   string,
