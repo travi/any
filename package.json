@@ -110,7 +110,7 @@
     "cz-conventional-changelog": "3.3.0",
     "formatio": "1.2.0",
     "globstar": "1.0.0",
-    "husky": "8.0.3",
+    "husky": "9.0.1",
     "ls-engines": "0.9.1",
     "mocha": "10.2.0",
     "npm-run-all2": "6.1.1",
