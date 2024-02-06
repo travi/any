@@ -157,6 +157,13 @@ suite('base generators', () => {
     const date = chance.date();
     chanceStub.date.withArgs({string: true}).returns(date);
 
+    assert.equal(any.date(), date);
+  });
+
+  test('that options can be passed through the date factory to the chance method', () => {
+    const date = chance.date();
+    chanceStub.date.withArgs({string: true, ...options}).returns(date);
+
     assert.equal(any.date(options), date);
   });
 
