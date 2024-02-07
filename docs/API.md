@@ -329,10 +329,13 @@ any.email();
 
 ## `date`
 
-An almost direct usage of [`date()` from chance.js](http://chancejs.com/time/date.html).
-No options passed to the `any` method are passed to the `chance` method, but
-the `{string: true}` option is passed because I have only had a use for the
-string form of random dates so far.
+An almost direct usage of [`date()` from chance.js](http://chancejs.com/time/date.html),
+but `{string: true}` is passed so the default behavior is to generate a date
+string by default.
+Options are appended to the default of `{string: true}` when calling the chance
+method, so refer to its documentation for what is available.
+Pass `{string: false}` in order to return [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+objects instead of date strings.
 
 ### `date` example
 
