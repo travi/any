@@ -36,12 +36,11 @@ just use Chance.js directly?
 
 <!--consumer-badges start -->
 
-[![npm](https://img.shields.io/npm/v/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
-[![monthly downloads](https://img.shields.io/npm/dm/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
-[![license](https://img.shields.io/github/license/travi/any.svg?style=flat)](LICENSE)
-[![Try @travi/any on RunKit](https://badge.runkitcdn.com/@travi/any.svg)](https://npm.runkit.com/@travi/any)
-![node][node-badge]
 [![npm][npm-badge]][npm-link]
+![node][node-badge]
+[![license](https://img.shields.io/github/license/travi/any.svg?style=flat)](LICENSE)
+[![monthly downloads](https://img.shields.io/npm/dm/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
+[![Try @travi/any on RunKit](https://badge.runkitcdn.com/@travi/any.svg)](https://npm.runkit.com/@travi/any)
 
 <!--consumer-badges end -->
 
