@@ -89,11 +89,11 @@
     }
   },
   "dependencies": {
-    "@types/chance": "1.1.6",
-    "chance": "1.1.11",
-    "debug": "4.3.5",
-    "lodash": "4.17.21",
-    "mersenne-twister": "1.1.0"
+    "@types/chance": "^1.1.6",
+    "chance": "^1.1.11",
+    "debug": "^4.3.5",
+    "lodash": "^4.17.21",
+    "mersenne-twister": "^1.1.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-exponentiation-operator": "7.24.6",
