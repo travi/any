@@ -102,7 +102,7 @@
     "@travi/babel-preset": "3.0.125",
     "@travi/eslint-config": "5.0.8",
     "@travi/eslint-config-mocha": "1.0.24",
-    "c8": "10.1.1",
+    "c8": "10.1.2",
     "chai": "4.4.1",
     "commitlint-config-travi": "1.4.50",
     "coveralls": "3.1.1",
