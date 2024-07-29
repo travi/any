@@ -101,7 +101,7 @@
     "@rollup/plugin-babel": "6.0.4",
     "@travi/babel-preset": "3.0.128",
     "@travi/eslint-config": "5.0.8",
-    "@travi/eslint-config-mocha": "1.0.24",
+    "@travi/eslint-config-mocha": "1.0.25",
     "c8": "10.1.2",
     "chai": "4.5.0",
     "commitlint-config-travi": "1.4.50",
