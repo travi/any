@@ -111,7 +111,7 @@
     "formatio": "1.2.0",
     "globstar": "1.0.0",
     "husky": "9.1.4",
-    "ls-engines": "0.9.2",
+    "ls-engines": "0.9.3",
     "mocha": "10.7.0",
     "npm-run-all2": "6.2.2",
     "proxyquire": "2.1.3",
