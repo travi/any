@@ -104,7 +104,7 @@
     "@travi/eslint-config-mocha": "1.0.25",
     "c8": "10.1.2",
     "chai": "4.5.0",
-    "commitlint-config-travi": "1.4.50",
+    "commitlint-config-travi": "1.4.51",
     "coveralls": "3.1.1",
     "cross-env": "7.0.3",
     "cz-conventional-changelog": "3.3.0",
