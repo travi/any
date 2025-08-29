@@ -74,6 +74,7 @@
     "prepare": "husky install",
     "lint:publish": "publint --strict",
     "lint:engines": "ls-engines",
+    "lint:js:fix": "run-s 'lint:js -- --fix'",
     "lint:lockfile": "lockfile-lint"
   },
   "files": [
