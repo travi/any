@@ -73,7 +73,8 @@
     "prepack": "npm run build",
     "prepare": "husky install",
     "lint:publish": "publint --strict",
-    "lint:engines": "ls-engines"
+    "lint:engines": "ls-engines",
+    "lint:lockfile": "lockfile-lint"
   },
   "files": [
     "./lib/",
@@ -112,6 +113,7 @@
     "formatio": "1.2.0",
     "globstar": "1.0.0",
     "husky": "9.1.7",
+    "lockfile-lint": "4.14.1",
     "ls-engines": "0.9.3",
     "mocha": "11.1.0",
     "npm-run-all2": "7.0.2",
