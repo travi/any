@@ -3,10 +3,10 @@
   "description": "random data generator for when test data is insignificant",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
+  "type": "commonjs",
   "engines": {
     "node": "^18.17 || >=20.6.1"
   },
-  "type": "commonjs",
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "contributors": [
     {
@@ -25,14 +25,9 @@
       "url": "https://github.com/justinwaite"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/travi/any.git"
-  },
-  "bugs": {
-    "url": "https://github.com/travi/any/issues"
-  },
-  "homepage": "https://github.com/travi/any#readme",
+  "repository": "travi/any",
+  "bugs": "https://github.com/travi/any/issues",
+  "homepage": "https://npm.im/@travi/any",
   "funding": {
     "url": "https://github.com/travi/any?sponsor=1"
   },
