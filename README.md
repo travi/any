@@ -41,6 +41,7 @@ just use Chance.js directly?
 [![license](https://img.shields.io/github/license/travi/any.svg?style=flat)](LICENSE)
 [![monthly downloads](https://img.shields.io/npm/dm/@travi/any.svg?style=flat)](https://www.npmjs.com/package/@travi/any)
 [![Try @travi/any on RunKit](https://badge.runkitcdn.com/@travi/any.svg)](https://npm.runkit.com/@travi/any)
+[![license][license-badge]][license-link]
 
 <!--consumer-badges end -->
 
@@ -115,3 +116,7 @@ the appropriate types to satisfy the tests.
 [npm-link]: https://www.npmjs.com/package/@travi/any
 
 [npm-badge]: https://img.shields.io/npm/v/@travi/any?logo=npm
+
+[license-link]: LICENSE
+
+[license-badge]: https://img.shields.io/github/license/travi/any.svg?logo=opensourceinitiative
