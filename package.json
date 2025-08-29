@@ -6,6 +6,7 @@
   "engines": {
     "node": "^18.17 || >=20.6.1"
   },
+  "type": "commonjs",
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "contributors": [
     {
