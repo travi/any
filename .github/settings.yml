@@ -1,0 +1,41 @@
+_extends: .github
+repository:
+  name: any
+  description: random data generator for when test data is insignificant
+  homepage: https://travi.github.io/any
+  private: false
+branches:
+  - name: master
+    protection: null
+rulesets:
+  - name: prevent destruction of the default branch
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - ~DEFAULT_BRANCH
+        exclude: []
+    rules:
+      - type: deletion
+      - type: non_fast_forward
+  - name: verification must pass
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - ~DEFAULT_BRANCH
+        exclude: []
+    rules:
+      - type: required_status_checks
+        parameters:
+          strict_required_status_checks_policy: false
+          required_status_checks:
+            - context: workflow-result
+              integration_id: 15368
+    bypass_actors:
+      - actor_id: 5
+        actor_type: RepositoryRole
+        bypass_mode: always
+
