@@ -95,7 +95,7 @@
     "mersenne-twister": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/plugin-transform-exponentiation-operator": "7.27.1",
+    "@babel/plugin-transform-exponentiation-operator": "7.28.5",
     "@babel/register": "7.28.3",
     "@rollup/plugin-babel": "6.1.0",
     "@travi/babel-preset": "3.0.145",
