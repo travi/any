@@ -111,7 +111,7 @@
     "globstar": "1.0.0",
     "husky": "9.1.7",
     "lockfile-lint": "4.14.1",
-    "ls-engines": "0.9.4",
+    "ls-engines": "0.10.0",
     "mocha": "11.7.5",
     "npm-run-all2": "8.0.4",
     "proxyquire": "2.1.3",
