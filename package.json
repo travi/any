@@ -51,6 +51,7 @@
   "module": "lib/any.mjs",
   "types": "./index.d.ts",
   "scripts": {
+    "pretest": "run-s build",
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
     "lint:engines": "ls-engines",
     "lint:js": "eslint . --cache",
@@ -68,7 +69,6 @@
     "generate:md": "remark . --output",
     "prepack": "npm run build",
     "prepare": "husky",
-    "pretest": "run-s build",
     "preversion": "npm test",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls"
   },
