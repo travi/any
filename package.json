@@ -99,7 +99,7 @@
     "@babel/register": "7.28.6",
     "@rollup/plugin-babel": "7.0.0",
     "@travi/babel-preset": "3.0.147",
-    "@travi/eslint-config": "5.0.12",
+    "@travi/eslint-config": "5.0.13",
     "@travi/eslint-config-mocha": "1.0.25",
     "c8": "11.0.0",
     "chai": "4.5.0",
