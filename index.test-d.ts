@@ -54,6 +54,10 @@ expectType<string>(any.url({
 expectType<string>(any.domain());
 expectType<string>(any.domain({length: 1}));
 
+expectType<string>(any.guid());
+expectType<string>(any.guid({version: 4}));
+expectType<string>(any.guid({version: 5}));
+
 expectType<string>(any.email());
 expectType<string>(any.email({length: 1}));
 expectType<string>(any.email({length: 1, domain: 'gmail.com'}));

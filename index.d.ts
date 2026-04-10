@@ -41,6 +41,8 @@ declare interface Any {
 
   domain(options?: Options): string;
 
+  guid(options?: { version: 4 | 5 }): string;
+
   email(options?: Partial<EmailOptions>): string;
 
   date(): string;

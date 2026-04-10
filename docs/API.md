@@ -16,6 +16,7 @@
 * [`boolean`](#boolean)
 * [`url`](#url)
 * [`domain`](#domain)
+* [`guid`](#guid)
 * [`email`](#email)
 * [`date`](#date)
 
@@ -326,6 +327,20 @@ for what is available.
 any.domain();
 
 // yapowidi.pk
+```
+
+## `guid`
+
+Direct usage of [`guid()` from chance.js](http://chancejs.com/miscellaneous/guid.html).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
+
+### `guid` example
+
+```js
+any.guid();
+
+// 51fbf644-fdbe-4b22-b294-940accacf452
 ```
 
 ## `email`
