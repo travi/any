@@ -72,6 +72,19 @@ suite('base generators', () => {
     assert.calledWith(chanceStub.url, undefined);
   });
 
+  test('that a domain is generated', () => {
+    const domain = chance.domain();
+    chanceStub.domain.withArgs(options).returns(domain);
+
+    assert.equal(any.domain(options), domain);
+  });
+
+  test('that primitives are not passed as options to the domain generator', () => {
+    any.domain(primitive);
+
+    assert.calledWith(chanceStub.domain, undefined);
+  });
+
   test('that a word is generated', () => {
     const word = chance.word();
     chanceStub.word.withArgs({syllables: 3, ...options}).returns(word);

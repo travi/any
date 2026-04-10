@@ -1,6 +1,7 @@
 import {
   boolean,
   date,
+  domain,
   email,
   float,
   fromList,
@@ -25,6 +26,7 @@ export default {
   float,
   boolean,
   url,
+  domain,
   email,
   date,
   simpleObject,

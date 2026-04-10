@@ -4,6 +4,7 @@ import WordOptions = Chance.WordOptions;
 import StringOptions = Chance.StringOptions;
 import UrlOptions = Chance.UrlOptions;
 import EmailOptions = Chance.EmailOptions;
+import Options = Chance.Options;
 
 declare interface Any {
   simpleObject(): Record<string, string>;
@@ -37,6 +38,8 @@ declare interface Any {
   boolean(options?: { likelihood?: number }): boolean;
 
   url(options?: Partial<UrlOptions>): string;
+
+  domain(options?: Options): string;
 
   email(options?: Partial<EmailOptions>): string;
 

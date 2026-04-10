@@ -51,6 +51,9 @@ expectType<string>(any.url({
   extensions: ['.jpg']
 }));
 
+expectType<string>(any.domain());
+expectType<string>(any.domain({length: 1}));
+
 expectType<string>(any.email());
 expectType<string>(any.email({length: 1}));
 expectType<string>(any.email({length: 1, domain: 'gmail.com'}));

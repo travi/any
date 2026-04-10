@@ -21,6 +21,7 @@ export const string = options => chance.string(!isPrimitive(options) ? options :
 export const sentence = options => chance.sentence(!isPrimitive(options) ? options : undefined);
 export const paragraph = options => chance.paragraph(!isPrimitive(options) ? options : undefined);
 export const url = options => chance.url(!isPrimitive(options) ? options : undefined);
+export const domain = options => chance.domain(!isPrimitive(options) ? options : undefined);
 export const boolean = options => chance.bool(!isPrimitive(options) ? options : undefined);
 export const email = options => chance.email(!isPrimitive(options) ? options : undefined);
 export const date = options => chance.date({string: true, ...options});

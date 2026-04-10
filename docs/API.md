@@ -15,6 +15,7 @@
 * [`float`](#float)
 * [`boolean`](#boolean)
 * [`url`](#url)
+* [`domain`](#domain)
 * [`email`](#email)
 * [`date`](#date)
 
@@ -311,6 +312,20 @@ documentation for what is available.
 any.url();
 
 // http://vek.fo/derpu
+```
+
+## `domain`
+
+Direct usage of [`domain()` from chance.js](http://chancejs.com/web/domain.html).
+Options are passed directly to the chance method so refer to its documentation
+for what is available.
+
+### `domain` example
+
+```js
+any.domain();
+
+// yapowidi.pk
 ```
 
 ## `email`
